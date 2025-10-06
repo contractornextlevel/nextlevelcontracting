@@ -1,0 +1,291 @@
+import { useParams, Link } from "react-router-dom";
+import { useState } from "react";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { ArrowLeft, ShoppingCart, Plus, Minus } from "lucide-react";
+import { toast } from "sonner";
+
+// Import product images
+import productBoots from "@/assets/product-boots.jpeg";
+import productLight from "@/assets/product-light.jpeg";
+import productGloves from "@/assets/product-gloves.jpg";
+import productDrill from "@/assets/product-drill.jpg";
+import productHelmet from "@/assets/product-helmet.jpg";
+import productWorklight from "@/assets/product-worklight.jpg";
+
+// Product data
+type Product = {
+  id: number;
+  image: string;
+  name: string;
+  price: string;
+  category: string;
+  description: string;
+  condition?: string;
+  isNew?: boolean;
+};
+
+const products: Record<string, Product> = {
+  "1": {
+    id: 1,
+    image: productBoots,
+    name: "Steplite EasyGrip Safety Boots – Steel Toe (S4)",
+    price: "$75",
+    category: "Safety Footwear",
+    condition: "Like New",
+    description: "Almost new — worn only once! High-quality safety boots with steel toe protection. Perfect for construction, industrial work, and outdoor projects. Features slip-resistant sole and waterproof material.",
+  },
+  "2": {
+    id: 2,
+    image: productLight,
+    name: "Epic Lighting Coventry Pendant Light",
+    price: "$40",
+    category: "Lighting",
+    condition: "Excellent",
+    description: "Modernize your space with this Epic Lighting Coventry 3 light chandelier. Its Roman Bronze Finish combined with Creme Cognac Glass Shades makes a beautiful addition to any home. Easy to install and maintain.",
+  },
+  "3": {
+    id: 3,
+    image: productGloves,
+    name: "Premium Leather Work Gloves",
+    price: "$35",
+    category: "Safety Gear",
+    isNew: true,
+    description: "Brand new premium leather work gloves. High-quality construction with reinforced stitching. Perfect for construction work, gardening, and general outdoor labor. Excellent grip and durability.",
+  },
+  "4": {
+    id: 4,
+    image: productDrill,
+    name: "Professional Power Drill Set",
+    price: "$120",
+    category: "Power Tools",
+    condition: "Like New",
+    description: "Professional-grade power drill set with multiple drill bits and carrying case. Barely used, in excellent condition. Variable speed control and ergonomic design for comfortable extended use.",
+  },
+  "5": {
+    id: 5,
+    image: productHelmet,
+    name: "Premium Safety Hard Hat",
+    price: "$45",
+    category: "Safety Equipment",
+    isNew: true,
+    description: "Brand new premium safety hard hat with adjustable suspension system. Meets all safety standards. Lightweight yet durable construction. Perfect for construction sites and industrial environments.",
+  },
+  "6": {
+    id: 6,
+    image: productWorklight,
+    name: "LED Professional Work Light",
+    price: "$55",
+    category: "Lighting",
+    isNew: true,
+    description: "High-powered LED work light with adjustable stand. Brand new condition. Provides bright, even illumination for any work area. Energy-efficient and long-lasting LED technology.",
+  },
+  "7": {
+    id: 7,
+    image: productGloves,
+    name: "Heavy Duty Work Gloves",
+    price: "$28",
+    category: "Safety Gear",
+    isNew: true,
+    description: "Brand new heavy-duty work gloves. Durable construction with reinforced palm and fingers. Excellent protection for demanding work environments.",
+  },
+  "8": {
+    id: 8,
+    image: productDrill,
+    name: "Cordless Drill Kit",
+    price: "$95",
+    category: "Power Tools",
+    isNew: true,
+    description: "Complete cordless drill kit with battery and charger. Brand new with warranty. Compact design with powerful motor. Includes carrying case and basic drill bit set.",
+  },
+  "9": {
+    id: 9,
+    image: productBoots,
+    name: "Professional Safety Boots",
+    price: "$85",
+    category: "Safety Footwear",
+    condition: "Excellent",
+    description: "Professional-grade safety boots in excellent condition. Steel toe protection, slip-resistant sole, and comfortable fit. Perfect for industrial and construction work.",
+  },
+  "10": {
+    id: 10,
+    image: productHelmet,
+    name: "Industrial Hard Hat Pro",
+    price: "$50",
+    category: "Safety Equipment",
+    description: "Professional industrial hard hat with superior protection. Adjustable fit system and ventilation. Meets all safety certification requirements.",
+  },
+  "11": {
+    id: 11,
+    image: productLight,
+    name: "Designer Pendant Light",
+    price: "$60",
+    category: "Lighting",
+    condition: "Like New",
+    description: "Beautiful designer pendant light in like-new condition. Elegant design that complements any interior. Easy installation with all mounting hardware included.",
+  },
+  "12": {
+    id: 12,
+    image: productDrill,
+    name: "Impact Driver Set",
+    price: "$140",
+    category: "Power Tools",
+    description: "Professional impact driver set with case and accessories. High-torque performance for demanding applications. Variable speed and LED work light.",
+  },
+};
+
+const ProductDetail = () => {
+  const { id } = useParams();
+  const [quantity, setQuantity] = useState(1);
+  
+  const product = products[id as keyof typeof products];
+
+  if (!product) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Navbar />
+        <div className="container mx-auto px-6 py-32 text-center">
+          <h1 className="text-4xl font-bold mb-4">Product Not Found</h1>
+          <Link to="/">
+            <Button>
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Home
+            </Button>
+          </Link>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  const handleAddToCart = () => {
+    toast.success(`Added ${quantity} ${product.name} to cart!`, {
+      description: `Total: ${product.price}`,
+    });
+  };
+
+  const incrementQuantity = () => setQuantity(q => q + 1);
+  const decrementQuantity = () => setQuantity(q => Math.max(1, q - 1));
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      
+      <main className="container mx-auto px-6 py-24 mt-16">
+        {/* Back Button */}
+        <Link to="/">
+          <Button variant="ghost" className="mb-8">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Products
+          </Button>
+        </Link>
+
+        {/* Product Details */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
+          {/* Product Image */}
+          <div className="relative aspect-square overflow-hidden rounded-lg bg-card shadow-lg">
+            <img 
+              src={product.image} 
+              alt={product.name}
+              className="w-full h-full object-cover"
+            />
+            {product.isNew && (
+              <Badge className="absolute top-6 right-6 bg-accent text-accent-foreground text-base px-4 py-2">
+                New
+              </Badge>
+            )}
+          </div>
+
+          {/* Product Info */}
+          <div className="space-y-6">
+            <div>
+              <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-2">
+                {product.category}
+              </p>
+              <h1 className="text-4xl font-bold text-foreground mb-4">
+                {product.name}
+              </h1>
+              {product.condition && (
+                <Badge variant="outline" className="text-base px-4 py-1">
+                  Condition: {product.condition}
+                </Badge>
+              )}
+            </div>
+
+            <div className="text-5xl font-bold text-foreground">
+              {product.price}
+            </div>
+
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              {product.description}
+            </p>
+
+            {/* Quantity Selector */}
+            <div className="space-y-4">
+              <label className="text-sm font-medium text-foreground">Quantity</label>
+              <div className="flex items-center space-x-4">
+                <Button 
+                  variant="outline" 
+                  size="icon"
+                  onClick={decrementQuantity}
+                  disabled={quantity <= 1}
+                >
+                  <Minus className="h-4 w-4" />
+                </Button>
+                <span className="text-2xl font-semibold w-12 text-center">
+                  {quantity}
+                </span>
+                <Button 
+                  variant="outline" 
+                  size="icon"
+                  onClick={incrementQuantity}
+                >
+                  <Plus className="h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+
+            {/* Add to Cart Button */}
+            <Button 
+              size="lg" 
+              className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-lg py-6"
+              onClick={handleAddToCart}
+            >
+              <ShoppingCart className="mr-2 h-5 w-5" />
+              Add to Cart
+            </Button>
+
+            {/* Product Features */}
+            <div className="border-t border-border pt-6 space-y-4">
+              <h3 className="font-semibold text-lg">Product Features</h3>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start">
+                  <span className="text-accent mr-2">✓</span>
+                  High-quality construction
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-2">✓</span>
+                  Professional-grade performance
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-2">✓</span>
+                  Trusted by professionals
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-2">✓</span>
+                  Excellent value for money
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default ProductDetail;

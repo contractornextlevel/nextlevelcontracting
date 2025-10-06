@@ -1,7 +1,8 @@
 import { ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo-outline.jpg";
 
 export const Navbar = () => {
   return (
@@ -9,24 +10,27 @@ export const Navbar = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center space-x-2">
-            <img src={logo} alt="Next Level Contracting" className="h-8 w-auto" />
-          </a>
+          <Link to="/" className="flex items-center space-x-2">
+            <img src={logo} alt="Next Level Contracting" className="h-12 w-auto" />
+          </Link>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#featured" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
+            <a href="/#featured" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
               Featured
             </a>
-            <a href="#collections" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
+            <a href="/#collections" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
               Collections
             </a>
-            <a href="#new-arrivals" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
+            <a href="/#new-arrivals" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
               New Arrivals
             </a>
-            <a href="#top-sellers" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
+            <a href="/#top-sellers" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
               Top Sellers
             </a>
+            <Link to="/contact" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
+              Contact
+            </Link>
           </div>
 
           {/* Cart */}

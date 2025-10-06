@@ -1,4 +1,5 @@
-import logo from "@/assets/logo.jpg";
+import { Link } from "react-router-dom";
+import logo from "@/assets/logo-outline.jpg";
 
 export const Footer = () => {
   return (
@@ -18,22 +19,22 @@ export const Footer = () => {
             <h4 className="font-semibold mb-4 text-primary-foreground">Shop</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#featured" className="text-primary-foreground/70 hover:text-accent transition-colors">
+                <a href="/#featured" className="text-primary-foreground/70 hover:text-accent transition-colors">
                   Featured Products
                 </a>
               </li>
               <li>
-                <a href="#collections" className="text-primary-foreground/70 hover:text-accent transition-colors">
+                <a href="/#collections" className="text-primary-foreground/70 hover:text-accent transition-colors">
                   Collections
                 </a>
               </li>
               <li>
-                <a href="#new-arrivals" className="text-primary-foreground/70 hover:text-accent transition-colors">
+                <a href="/#new-arrivals" className="text-primary-foreground/70 hover:text-accent transition-colors">
                   New Arrivals
                 </a>
               </li>
               <li>
-                <a href="#top-sellers" className="text-primary-foreground/70 hover:text-accent transition-colors">
+                <a href="/#top-sellers" className="text-primary-foreground/70 hover:text-accent transition-colors">
                   Best Sellers
                 </a>
               </li>
@@ -45,22 +46,22 @@ export const Footer = () => {
             <h4 className="font-semibold mb-4 text-primary-foreground">Support</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
+                <Link to="/contact" className="text-primary-foreground/70 hover:text-accent transition-colors">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
+                <a href="/#" className="text-primary-foreground/70 hover:text-accent transition-colors">
                   Shipping Info
                 </a>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
+                <a href="/#" className="text-primary-foreground/70 hover:text-accent transition-colors">
                   Returns
                 </a>
               </li>
               <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-accent transition-colors">
+                <a href="/#" className="text-primary-foreground/70 hover:text-accent transition-colors">
                   FAQ
                 </a>
               </li>
