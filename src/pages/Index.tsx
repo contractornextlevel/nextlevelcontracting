@@ -10,6 +10,10 @@ import productGloves from "@/assets/product-gloves.jpg";
 import productDrill from "@/assets/product-drill.jpg";
 import productHelmet from "@/assets/product-helmet.jpg";
 import productWorklight from "@/assets/product-worklight.jpg";
+import productFootrest from "@/assets/product-footrest.jpeg";
+import productKeurig from "@/assets/product-keurig.jpeg";
+import productCommode from "@/assets/product-commode.jpeg";
+import productJeepStorage from "@/assets/product-jeep-storage.jpeg";
 
 const Index = () => {
   // Featured Products
@@ -50,6 +54,38 @@ const Index = () => {
 
   // New Arrivals
   const newArrivals = [
+    {
+      id: 13,
+      image: productFootrest,
+      name: "HUANUO Adjustable Footrest Under Desk",
+      price: "$20",
+      category: "Office Equipment",
+      isNew: true,
+    },
+    {
+      id: 14,
+      image: productKeurig,
+      name: "Keurig K-Elite Single Serve Coffee Maker",
+      price: "$120",
+      category: "Appliances",
+      isNew: true,
+    },
+    {
+      id: 15,
+      image: productCommode,
+      name: "Drive Medical Steel Folding Frame Commode",
+      price: "$50",
+      category: "Medical Equipment",
+      isNew: true,
+    },
+    {
+      id: 16,
+      image: productJeepStorage,
+      name: "Center Console Hanging Storage Box for Jeep Wrangler",
+      price: "$10",
+      category: "Automotive Accessories",
+      isNew: true,
+    },
     {
       id: 5,
       image: productHelmet,

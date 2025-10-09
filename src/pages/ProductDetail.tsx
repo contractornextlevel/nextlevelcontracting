@@ -14,6 +14,10 @@ import productGloves from "@/assets/product-gloves.jpg";
 import productDrill from "@/assets/product-drill.jpg";
 import productHelmet from "@/assets/product-helmet.jpg";
 import productWorklight from "@/assets/product-worklight.jpg";
+import productFootrest from "@/assets/product-footrest.jpeg";
+import productKeurig from "@/assets/product-keurig.jpeg";
+import productCommode from "@/assets/product-commode.jpeg";
+import productJeepStorage from "@/assets/product-jeep-storage.jpeg";
 
 // Product data
 type Product = {
@@ -133,6 +137,42 @@ const products: Record<string, Product> = {
     price: "$140",
     category: "Power Tools",
     description: "Professional impact driver set with case and accessories. High-torque performance for demanding applications. Variable speed and LED work light.",
+  },
+  "13": {
+    id: 13,
+    image: productFootrest,
+    name: "HUANUO Adjustable Footrest Under Desk",
+    price: "$20",
+    category: "Office Equipment",
+    isNew: true,
+    description: "Ergonomic footrest perfect for home or office use. Features 3 adjustable height levels, up to 30° tilt angle for better posture and comfort, non-slip massage surface texture. Helps improve circulation and reduce fatigue.",
+  },
+  "14": {
+    id: 14,
+    image: productKeurig,
+    name: "Keurig K-Elite Single Serve Coffee Maker",
+    price: "$120",
+    category: "Appliances",
+    isNew: true,
+    description: "Top-rated Keurig machine in brushed silver. Features strong brew button for richer coffee flavor, iced setting for refreshing iced coffee, large 75 oz water reservoir. Brews in under a minute and compatible with all K-Cup pods.",
+  },
+  "15": {
+    id: 15,
+    image: productCommode,
+    name: "Drive Medical Steel Folding Frame Commode",
+    price: "$50",
+    category: "Medical Equipment",
+    isNew: true,
+    description: "Durable and comfortable commode chair, perfect for home care or recovery use. Folds easily for storage or travel. Sturdy steel frame for maximum stability. Includes bucket with lid and splash guard. Tool-free assembly.",
+  },
+  "16": {
+    id: 16,
+    image: productJeepStorage,
+    name: "Center Console Hanging Storage Box for Jeep Wrangler",
+    price: "$10",
+    category: "Automotive Accessories",
+    isNew: true,
+    description: "Perfect organizer for your Jeep Wrangler. Keeps your phone, keys, and small items within easy reach while driving. Fits most Jeep Wrangler models (JK, JL, JLU, Gladiator). Easy to install with no drilling required. Durable ABS material.",
   },
 };
 
