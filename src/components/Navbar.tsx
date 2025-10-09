@@ -16,17 +16,17 @@ export const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
+            <Link to="/" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
+              Home
+            </Link>
+            <Link to="/products" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
+              All Products
+            </Link>
             <a href="/#featured" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
               Featured
             </a>
-            <a href="/#collections" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
-              Collections
-            </a>
             <a href="/#new-arrivals" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
               New Arrivals
-            </a>
-            <a href="/#top-sellers" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
-              Top Sellers
             </a>
             <Link to="/contact" className="text-sm font-medium text-foreground hover:text-accent transition-colors">
               Contact

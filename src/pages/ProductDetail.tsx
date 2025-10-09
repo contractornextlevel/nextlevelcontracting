@@ -22,6 +22,8 @@ import productEyewash from "@/assets/product-eyewash.jpeg";
 import productPendantLight from "@/assets/product-pendant-light.jpeg";
 import productChandelier from "@/assets/product-chandelier.jpeg";
 import productKodiakBoots from "@/assets/product-kodiak-boots.jpeg";
+import productIcHousing from "@/assets/product-ic-housing.jpeg";
+import productMassageGun from "@/assets/product-massage-gun.jpeg";
 
 // Product data
 type Product = {
@@ -213,6 +215,24 @@ const products: Record<string, Product> = {
     category: "Safety Footwear",
     condition: "Excellent",
     description: "Stay protected and stylish with these premium Kodiak safety boots. Women's Size: 7.5 US. Top-quality Canadian brand with steel toe protection, slip-resistant sole, and durable leather construction. Excellent comfort and support. Gently used, excellent condition.",
+  },
+  "21": {
+    id: 21,
+    image: productIcHousing,
+    name: "Lightolier 302MRIC7SPX IC Housing",
+    price: "$60",
+    category: "Lighting",
+    isNew: true,
+    description: "Upgrade your recessed lighting with this high-quality, brand-new Lightolier frame-in kit. IC-rated for direct contact with insulation. Silent Pack design for noise reduction. 3 3/4 inch aperture ideal for MR16 lamps. Easy installation compatible with standard ceiling setups.",
+  },
+  "22": {
+    id: 22,
+    image: productMassageGun,
+    name: "Deep Tissue Fascia Relaxer – 30-Speed Muscle Massager",
+    price: "$45",
+    category: "Health & Wellness",
+    isNew: true,
+    description: "Soothe sore muscles and boost recovery with this powerful 30-speed massage gun perfect for athletes, gym users, or anyone needing deep tissue relief. Features 30 adjustable speed levels, multiple massage heads, quiet yet powerful motor, rechargeable battery, and includes carrying case.",
   },
 };
 
