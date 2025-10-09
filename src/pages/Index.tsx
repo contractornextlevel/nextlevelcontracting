@@ -14,46 +14,82 @@ import productFootrest from "@/assets/product-footrest.jpeg";
 import productKeurig from "@/assets/product-keurig.jpeg";
 import productCommode from "@/assets/product-commode.jpeg";
 import productJeepStorage from "@/assets/product-jeep-storage.jpeg";
+import productEyewash from "@/assets/product-eyewash.jpeg";
+import productPendantLight from "@/assets/product-pendant-light.jpeg";
+import productChandelier from "@/assets/product-chandelier.jpeg";
+import productKodiakBoots from "@/assets/product-kodiak-boots.jpeg";
 
 const Index = () => {
   // Featured Products
   const featuredProducts = [
     {
-      id: 1,
-      image: productBoots,
-      name: "Steplite EasyGrip Safety Boots – Steel Toe (S4)",
-      price: "$75",
-      category: "Safety Footwear",
-      condition: "Like New",
-    },
-    {
-      id: 2,
-      image: productLight,
-      name: "Epic Lighting Coventry Pendant Light",
-      price: "$40",
-      category: "Lighting",
-      condition: "Excellent",
-    },
-    {
-      id: 3,
-      image: productGloves,
-      name: "Premium Leather Work Gloves",
-      price: "$35",
-      category: "Safety Gear",
+      id: 17,
+      image: productEyewash,
+      name: "CGOLDENWALL Portable Eye Wash Station",
+      price: "$20",
+      category: "Safety Equipment",
       isNew: true,
     },
     {
-      id: 4,
-      image: productDrill,
-      name: "Professional Power Drill Set",
+      id: 18,
+      image: productPendantLight,
+      name: "Epic Lighting Coventry Pendant Light",
+      price: "$30",
+      category: "Lighting",
+      isNew: true,
+    },
+    {
+      id: 14,
+      image: productKeurig,
+      name: "Keurig K-Elite Single Serve Coffee Maker",
       price: "$120",
-      category: "Power Tools",
-      condition: "Like New",
+      category: "Appliances",
+      isNew: true,
+    },
+    {
+      id: 20,
+      image: productKodiakBoots,
+      name: "Kodiak Women's Safety Boots – Size 7.5 US",
+      price: "$60",
+      category: "Safety Footwear",
+      condition: "Excellent",
     },
   ];
 
   // New Arrivals
   const newArrivals = [
+    {
+      id: 17,
+      image: productEyewash,
+      name: "CGOLDENWALL Portable Eye Wash Station",
+      price: "$20",
+      category: "Safety Equipment",
+      isNew: true,
+    },
+    {
+      id: 18,
+      image: productPendantLight,
+      name: "Epic Lighting Coventry Pendant Light",
+      price: "$30",
+      category: "Lighting",
+      isNew: true,
+    },
+    {
+      id: 19,
+      image: productChandelier,
+      name: "Epic Lighting Coventry Chandelier",
+      price: "$50",
+      category: "Lighting",
+      isNew: true,
+    },
+    {
+      id: 20,
+      image: productKodiakBoots,
+      name: "Kodiak Women's Safety Boots – Size 7.5 US",
+      price: "$60",
+      category: "Safety Footwear",
+      condition: "Excellent",
+    },
     {
       id: 13,
       image: productFootrest,
@@ -84,38 +120,6 @@ const Index = () => {
       name: "Center Console Hanging Storage Box for Jeep Wrangler",
       price: "$10",
       category: "Automotive Accessories",
-      isNew: true,
-    },
-    {
-      id: 5,
-      image: productHelmet,
-      name: "Premium Safety Hard Hat",
-      price: "$45",
-      category: "Safety Equipment",
-      isNew: true,
-    },
-    {
-      id: 6,
-      image: productWorklight,
-      name: "LED Professional Work Light",
-      price: "$55",
-      category: "Lighting",
-      isNew: true,
-    },
-    {
-      id: 7,
-      image: productGloves,
-      name: "Heavy Duty Work Gloves",
-      price: "$28",
-      category: "Safety Gear",
-      isNew: true,
-    },
-    {
-      id: 8,
-      image: productDrill,
-      name: "Cordless Drill Kit",
-      price: "$95",
-      category: "Power Tools",
       isNew: true,
     },
   ];

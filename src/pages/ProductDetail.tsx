@@ -18,6 +18,10 @@ import productFootrest from "@/assets/product-footrest.jpeg";
 import productKeurig from "@/assets/product-keurig.jpeg";
 import productCommode from "@/assets/product-commode.jpeg";
 import productJeepStorage from "@/assets/product-jeep-storage.jpeg";
+import productEyewash from "@/assets/product-eyewash.jpeg";
+import productPendantLight from "@/assets/product-pendant-light.jpeg";
+import productChandelier from "@/assets/product-chandelier.jpeg";
+import productKodiakBoots from "@/assets/product-kodiak-boots.jpeg";
 
 // Product data
 type Product = {
@@ -173,6 +177,42 @@ const products: Record<string, Product> = {
     category: "Automotive Accessories",
     isNew: true,
     description: "Perfect organizer for your Jeep Wrangler. Keeps your phone, keys, and small items within easy reach while driving. Fits most Jeep Wrangler models (JK, JL, JLU, Gladiator). Easy to install with no drilling required. Durable ABS material.",
+  },
+  "17": {
+    id: 17,
+    image: productEyewash,
+    name: "CGOLDENWALL Portable Eye Wash Station",
+    price: "$20",
+    category: "Safety Equipment",
+    isNew: true,
+    description: "Portable emergency eye wash kit perfect for workplaces, garages, labs, or construction sites. Wall-mounted design with mirror and emergency sign. Includes 2 × 16.9 oz (500 ml) empty bottles (NO solution included). OSHA approved safety material. Compact, durable, and easy to install.",
+  },
+  "18": {
+    id: 18,
+    image: productPendantLight,
+    name: "Epic Lighting Coventry Pendant Light",
+    price: "$30",
+    category: "Lighting",
+    isNew: true,
+    description: "Beautiful pendant light with elegant details perfect for living rooms, dining rooms, or entryways. Creme Cognac glass with Roman Bronze finish. Dimensions: 20 inches wide x 26 inches high. 3 x 100W max bulbs (not included). Includes 9' wire and 6' chain. Classic Coventry design adds warmth and luxury.",
+  },
+  "19": {
+    id: 19,
+    image: productChandelier,
+    name: "Epic Lighting Coventry Chandelier",
+    price: "$50",
+    category: "Lighting",
+    isNew: true,
+    description: "Elegant and stylish chandelier perfect for your living room, dining room, or entryway. Creme Cognac glass with Roman Bronze finish. Dimensions: 22 inches wide x 20 inches high. 3 x 100W max bulbs (not included). Includes 9' wire and 6' chain for easy installation. Classic Coventry design adds luxury to any room.",
+  },
+  "20": {
+    id: 20,
+    image: productKodiakBoots,
+    name: "Kodiak Women's Safety Boots – Size 7.5 US",
+    price: "$60",
+    category: "Safety Footwear",
+    condition: "Excellent",
+    description: "Stay protected and stylish with these premium Kodiak safety boots. Women's Size: 7.5 US. Top-quality Canadian brand with steel toe protection, slip-resistant sole, and durable leather construction. Excellent comfort and support. Gently used, excellent condition.",
   },
 };
 
