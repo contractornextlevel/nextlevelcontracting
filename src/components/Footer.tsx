@@ -13,7 +13,7 @@ export const Footer = () => {
             <img 
               src={logo} 
               alt="Next Level Contracting" 
-              className="h-12 w-auto brightness-0 invert" 
+              className="h-20 w-auto brightness-0 invert" 
             />
             <p className="text-sm text-primary-foreground/70 leading-relaxed">
               Your trusted marketplace for quality products at unbeatable prices. From tools to home essentials.
