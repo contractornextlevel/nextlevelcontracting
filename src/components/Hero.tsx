@@ -30,7 +30,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[85vh] sm:min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
       {/* Background Images Carousel */}
       <div className="absolute inset-0 z-0">
         {heroImages.map((image, index) => (
@@ -47,8 +47,8 @@ export const Hero = () => {
                 animation: index === currentSlide ? "kenburns 20s ease-out" : "none",
               }}
             />
-            {/* Dark overlay for readability */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/85 to-primary/75" />
+            {/* Enhanced overlay for better navbar integration */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-primary/85 to-primary/75" />
           </div>
         ))}
       </div>
@@ -57,8 +57,8 @@ export const Hero = () => {
       <div className="absolute inset-0 z-[1] bg-gradient-to-r from-primary/40 via-transparent to-accent/20 animate-pulse" 
            style={{ animationDuration: "8s" }} />
 
-      {/* Content */}
-      <div className="container relative z-10 px-4 sm:px-6 py-20 sm:py-32">
+      {/* Content - Added top padding for navbar integration */}
+      <div className="container relative z-10 px-4 sm:px-6 py-32 sm:py-36 md:py-40">
         <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
           {/* Animated badge */}
           <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-accent/20 border border-accent/30 backdrop-blur-md animate-fade-in">
