@@ -70,6 +70,15 @@ import productCabinetPulls from "@/assets/product-cabinet-pulls.jpeg";
 import productWasherPump from "@/assets/product-washer-pump.jpeg";
 import productWaterSlide from "@/assets/product-water-slide.jpeg";
 import productPillowCovers from "@/assets/product-pillow-covers.jpeg";
+import productStapler from "@/assets/product-stapler.jpeg";
+import productTablecloth from "@/assets/product-tablecloth.jpeg";
+import productDogBedCover from "@/assets/product-dog-bed-cover.jpeg";
+import productSeatCushion from "@/assets/product-seat-cushion.jpeg";
+import productLunchBox from "@/assets/product-lunch-box.jpeg";
+import productFirePitMat from "@/assets/product-fire-pit-mat.jpeg";
+import productToiletRug from "@/assets/product-toilet-rug.jpeg";
+import productPantyhose from "@/assets/product-pantyhose.jpeg";
+import productBohoCurtainDetail from "@/assets/product-boho-curtain-detail.jpeg";
 
 interface Product {
   id: number;
@@ -598,6 +607,78 @@ const allProducts: Product[] = [
     id: 65,
     image: productPillowCovers,
     name: "MIULEE Decorative Pillow Covers Combo – Set of 3 (White + Beige)",
+    price: "$25",
+    category: "Home Decor",
+    isNew: true,
+  },
+  {
+    id: 66,
+    image: productStapler,
+    name: "Arrow Fastener T50X Tac Mate Stapler – Grey",
+    price: "$15",
+    category: "Tools & Hardware",
+    condition: "Like New",
+  },
+  {
+    id: 67,
+    image: productTablecloth,
+    name: "Misaya Rectangle Vinyl Tablecloth – Green, 30\" × 72\"",
+    price: "$15",
+    category: "Home & Bath",
+    isNew: true,
+  },
+  {
+    id: 68,
+    image: productDogBedCover,
+    name: "SUNNYTEX Waterproof Dog Bed Cover / Pet Blanket – Furniture Protector",
+    price: "$15",
+    category: "Pet Supplies",
+    isNew: true,
+  },
+  {
+    id: 69,
+    image: productSeatCushion,
+    name: "3D Inflatable Seat Cushion – Portable Comfort Pad",
+    price: "$20",
+    category: "Accessories",
+    isNew: true,
+  },
+  {
+    id: 70,
+    image: productLunchBox,
+    name: "Lunch Box for Men & Women – Portable & Reusable",
+    price: "$10",
+    category: "Accessories",
+    isNew: true,
+  },
+  {
+    id: 71,
+    image: productFirePitMat,
+    name: "UNCO 36\" Round Fire Pit Mat – Fireproof & Portable",
+    price: "$20",
+    category: "Garden & Outdoor",
+    isNew: true,
+  },
+  {
+    id: 72,
+    image: productToiletRug,
+    name: "OLANLY Luxury U-Shaped Toilet Rug – Soft & Absorbent (Yellow)",
+    price: "$15",
+    category: "Home & Bath",
+    isNew: true,
+  },
+  {
+    id: 73,
+    image: productPantyhose,
+    name: "Women's Fashion Pantyhose – Soft & Comfortable",
+    price: "$8",
+    category: "Accessories",
+    isNew: true,
+  },
+  {
+    id: 74,
+    image: productBohoCurtainDetail,
+    name: "Jinchan Boho Linen Curtains – Grey Farmhouse Style (84\")",
     price: "$25",
     category: "Home Decor",
     isNew: true,
