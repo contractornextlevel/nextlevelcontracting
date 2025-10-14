@@ -79,14 +79,14 @@ export const Footer = () => {
               </li>
               <li className="flex items-start gap-3 text-primary-foreground/70">
                 <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@nextlevel.com" className="hover:text-accent transition-colors">
-                  info@nextlevel.com
+                <a href="mailto:contractornextlevel@gmail.com" className="hover:text-accent transition-colors">
+                  contractornextlevel@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3 text-primary-foreground/70">
                 <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <a href="tel:+15551234567" className="hover:text-accent transition-colors">
-                  (555) 123-4567
+                <a href="tel:+15197781439" className="hover:text-accent transition-colors">
+                  +1 (519) 778-1439
                 </a>
               </li>
               <li className="flex items-start gap-3 text-primary-foreground/70">
