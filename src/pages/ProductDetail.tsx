@@ -527,33 +527,15 @@ const products: Record<string, Product> = {
   },
   "49": {
     id: 49,
-    image: productRugPad,
-    name: "Rug Pad – Non-Slip Felt Rug Gripper 2.5 x 2 m",
-    price: "$15",
-    category: "Home Decor",
+    image: productAerostarFilters,
+    name: "Aerostar AC & Furnace Pleated Air Conditioner Filters – 20x20x1, MERV 8 (6 Pack)",
+    price: "$50",
+    category: "Home Appliances",
     isNew: true,
-    description: "Protect your floors and keep your rugs in place with this extra thick felt rug pad — perfect for area rugs, hallway runners, and carpets. Size: 2.5 x 2 m, extra thick felt – 1/4\", non-slip grip, carpet protector & underlay, easy to trim & fit any rug.",
+    description: "Keep your home air clean with these high-efficiency pleated filters — removes dust, lint, mold, and allergens. Size: 20 x 20 x 1 inch, MERV 8 – High Efficiency, 6 Pack, Pleated Design for Maximum Filtration, Ideal for AC & Furnace systems.",
   },
   "50": {
     id: 50,
-    image: productBucket,
-    name: "3.5 Gallon White Bucket & Lid – Food Grade, BPA Free (4 Pack)",
-    price: "$20",
-    category: "Storage & Organization",
-    isNew: true,
-    description: "Durable and versatile all-purpose buckets — perfect for storage, food, or household use. Capacity: 3.5 gallons each, includes lid, food grade & BPA free plastic, durable 90 mil construction, all-purpose use – home, kitchen, or storage.",
-  },
-  "51": {
-    id: 51,
-    image: productSlipcover,
-    name: "TAOCOCO Recliner Loveseat Slipcover – 6 Pieces, Charcoal Grey",
-    price: "$30",
-    category: "Home Decor",
-    isNew: true,
-    description: "Protect your dual reclining loveseat with this stretchy, soft jacquard furniture cover — stylish and durable. 6-piece set for 2-seat recliner, soft stretch jacquard fabric, elastic fit – easy to install, protects furniture from spills, pets & dirt. Color: Charcoal Grey.",
-  },
-  "52": {
-    id: 52,
     image: productFauxFurRug,
     name: "Faux Fur Fluffy Rug – White, 1.9 × 4.9 Feet",
     price: "$25",
@@ -561,8 +543,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Add a soft and cozy touch to your home with this faux sheepskin rug — perfect for bedrooms, living rooms, or kids' rooms. Size: 1.9 × 4.9 Feet, Fluffy & Soft Faux Fur, Perfect for Bedroom, Living Room, or Hallway, Cozy Bedside or Runner Rug, Stylish & Easy to Clean.",
   },
-  "53": {
-    id: 53,
+  "51": {
+    id: 51,
     image: productGatorWheels,
     name: "Peg Perego Gator HPX Front Wheels – 2 Pack",
     price: "$20",
@@ -570,8 +552,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Replacement front wheels for your Peg Perego Gator HPX — fits pre-2010 manufactured models only. 2 Front Wheels Included, Compatible with Pre-2010 Gator HPX Models, Durable & Easy to Install, Perfect Replacement Part.",
   },
-  "54": {
-    id: 54,
+  "52": {
+    id: 52,
     image: productWindowTrim,
     name: "Savadicar 4-Piece Black Window Beltline Trim Cover – Ford F150 (2021-Present)",
     price: "$15",
@@ -579,8 +561,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Upgrade your Ford F150's exterior with these sleek window sill overlay accents — stylish and easy to install. Fits Ford F150 (2021-Present), 4-Piece Set, Window Sill Overlay Accent, Exterior Styling Upgrade, Durable & Easy to Install.",
   },
-  "55": {
-    id: 55,
+  "53": {
+    id: 53,
     image: productCarpetProtector,
     name: "Uross Carpet Protector for Pets – 3.6FT, 2PCS",
     price: "$10",
@@ -588,8 +570,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Protect your carpets from cat scratches with these easy-to-use plastic mats — perfect for doorways or any scratch-prone area. Size: 3.6FT, 2 Pieces Included, Anti-Scratch Design, Easy to Cut & Fit Any Carpet, Protects Carpet from Pets.",
   },
-  "56": {
-    id: 56,
+  "54": {
+    id: 54,
     image: productVicksHumidifier,
     name: "Vicks Mini Filter Free Cool Mist Humidifier – Small Room",
     price: "$10",
@@ -597,8 +579,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Keep your room comfortable and your air fresh with this compact humidifier — works with Vicks VapoPads for soothing relief. Filter-Free Design – Easy to Use, Variable Mist Control, Works with Vicks VapoPads, Small & Portable – Perfect for Bedrooms or Offices, Includes 2 Parts as Shown in Photo.",
   },
-  "57": {
-    id: 57,
+  "55": {
+    id: 55,
     image: productRegisterPaper,
     name: "Cash Register Paper Rolls – For STAR SP700 & POS Printers (50 Rolls)",
     price: "$20",
@@ -606,8 +588,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "High-quality bond paper rolls — perfect for restaurants, shops, or any POS system. Size: 3\" x 150', 50 Non-Thermal Rolls, 50 GSM, Compatible with STAR SP700, TMU200, SRP275, New & Ready to Use.",
   },
-  "58": {
-    id: 58,
+  "56": {
+    id: 56,
     image: productDrillBitSet,
     name: "Mastercraft Drill & Screwdriver Bit Set – 253 Pieces",
     price: "$50",
@@ -615,8 +597,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Complete drill and screwdriver bit set — perfect for home, garage, or professional use. 253 Pieces Included, Compatible with Most Drills & Screwdrivers, Durable & Long-Lasting, Ideal for DIY, Repairs, & Projects.",
   },
-  "59": {
-    id: 59,
+  "57": {
+    id: 57,
     image: productCanvasDropcloth,
     name: "Everbilt Canvas Dropcloth – 3 ft. 9 in. x 14 ft. 9 in., Medium Duty",
     price: "$10",
@@ -624,8 +606,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Protect your floors and furniture during painting or projects with this washable and reusable canvas dropcloth. Size: 3 ft. 9 in. x 14 ft. 9 in., 8oz Medium Duty Canvas, Washable & Reusable, Ideal for Painting, DIY, & Home Projects.",
   },
-  "60": {
-    id: 60,
+  "58": {
+    id: 58,
     image: productSheetSander,
     name: "Mastercraft 2A Sheet Sander – Used / 1/3 Condition",
     price: "$20",
@@ -633,8 +615,8 @@ const products: Record<string, Product> = {
     condition: "Used (1/3)",
     description: "Durable sheet sander for sanding wood, metal, or DIY projects — reliable and ready for use. Brand: Mastercraft, Model: 2A, Used – 1/3 Condition, Ideal for DIY, Home, or Workshop Projects, Easy to Use.",
   },
-  "61": {
-    id: 61,
+  "59": {
+    id: 59,
     image: productWallLaundryBasket,
     name: "Wall Laundry Basket Folding Laundry Hamper – White",
     price: "$20",
@@ -642,8 +624,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Keep your bathroom or laundry area tidy with this foldable wall-mounted laundry basket — perfect for saving space and keeping clothes organized. Folding & Space-Saving Design, Wall-Mounted for Easy Access, Ideal for Laundry, Clothes, or Waste Storage, Durable Plastic Material, Color: White.",
   },
-  "62": {
-    id: 62,
+  "60": {
+    id: 60,
     image: productCabinetPulls,
     name: "Franklin Brass P29618K-SN-B Satin Nickel 5-Inch Cabinet Pulls (10 Pack)",
     price: "$15",
@@ -651,8 +633,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Upgrade your kitchen or furniture with this beautiful set of satin nickel drawer pulls. Perfect for cabinets, drawers, or furniture renovation projects. Brand: Franklin Brass, Model: P29618K-SN-B \"Francisco\", Finish: Satin Nickel, Size: 5-inch (center-to-center), Includes: 10 handles (with screws), Condition: Brand New – Unopened.",
   },
-  "63": {
-    id: 63,
+  "61": {
+    id: 61,
     image: productWasherPump,
     name: "Trico 11-614 Spray Windshield Washer Pump (1 Pack)",
     price: "$15",
@@ -660,8 +642,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Original Equipment replacement windshield washer pump. Complete instructions included, No fitting adjustments required, Includes electronic circuit board and relay, Includes reservoir filter. Brand new condition.",
   },
-  "64": {
-    id: 64,
+  "62": {
+    id: 62,
     image: productWaterSlide,
     name: "Inflatable Water Slide – Backyard Fun for Kids",
     price: "$25",
@@ -669,8 +651,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Bring water fun to your backyard with this giant inflatable slide. Perfect for kids and family, ideal for sunny days and summer parties. Easy to inflate and use, Durable and sturdy, Includes water connection accessories. Warning: contains small parts, not suitable for children under 3.",
   },
-  "65": {
-    id: 65,
+  "63": {
+    id: 63,
     image: productPillowCovers,
     name: "MIULEE Decorative Pillow Covers Combo – Set of 3 (White + Beige)",
     price: "$25",
@@ -678,8 +660,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Add a cozy and elegant touch to your home with this MIULEE decorative pillow cover combo — perfect for your sofa, bed, or any modern space. Includes: 1 White Corduroy Pillow Cover (26 x 26 inches) and 2 Velvet Beige Pillow Covers (20 x 20 inches). Hidden zipper design, Easy to wash and maintain, Great for sofa, bed, or car decoration.",
   },
-  "66": {
-    id: 66,
+  "64": {
+    id: 64,
     image: productStapler,
     name: "Arrow Fastener T50X Tac Mate Stapler – Grey",
     price: "$15",
@@ -687,8 +669,8 @@ const products: Record<string, Product> = {
     condition: "Like New",
     description: "High-quality Arrow T50X Tac Mate Stapler, perfect for home repairs, upholstery, crafts, and DIY projects. This unit is used but in excellent, like-new condition — works perfectly! Compatible Staples: T50 series, Ergonomic design for comfortable use, Durable metal body with easy squeeze handle. Ideal for: Upholstery, insulation, crafting, and general home repairs.",
   },
-  "67": {
-    id: 67,
+  "65": {
+    id: 65,
     image: productTablecloth,
     name: "Misaya Rectangle Vinyl Tablecloth – Green, 30\" × 72\"",
     price: "$15",
@@ -696,8 +678,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Keep your table protected and stylish with this Misaya Elastic Fitted Vinyl Tablecloth — perfect for indoor or outdoor use! Size: 30\" × 72\" (Fits standard 6-foot folding tables), Color: Green, 100% waterproof vinyl with soft flannel backing, Elastic edges for a snug fit, Waterproof and easy to clean, Ideal for picnics, camping, BBQs, and everyday use.",
   },
-  "68": {
-    id: 68,
+  "66": {
+    id: 66,
     image: productDogBedCover,
     name: "SUNNYTEX Waterproof Dog Bed Cover / Pet Blanket – Furniture Protector",
     price: "$15",
@@ -705,8 +687,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Keep your furniture clean and cozy with this SUNNYTEX Waterproof Pet Cover — ideal for dogs and cats. Protects your sofa, bed, or car seat from fur, dirt, and accidents! 100% waterproof & leakproof, Non-slip backing keeps it in place, Machine washable & durable, Perfect for couch, sofa, bed, or car seat, Comfortable for pets to rest or sleep on.",
   },
-  "69": {
-    id: 69,
+  "67": {
+    id: 67,
     image: productSeatCushion,
     name: "3D Inflatable Seat Cushion – Portable Comfort Pad",
     price: "$20",
@@ -714,8 +696,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Travel, work, or relax in comfort with this 3D inflatable seat cushion — perfect for long flights, car rides, office chairs, camping, wheelchairs, or stadium seating. No pump required and comes with a convenient storage bag. 3D Inflatable Design for Pressure Relief, Portable & Lightweight with Storage Bag, Ideal for Airplane Travel, Car, Office, Camping, Wheelchair, or Stadium, Easy to Inflate & Deflate, No Pump Needed.",
   },
-  "70": {
-    id: 70,
+  "68": {
+    id: 68,
     image: productLunchBox,
     name: "Lunch Box for Men & Women – Portable & Reusable",
     price: "$10",
@@ -723,8 +705,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Keep your meals fresh and easy to carry with this compact lunch bag — perfect for office, work, or picnics. Durable, reusable, and lightweight for everyday use. Compact & Portable Design, Reusable & Easy to Clean, Ideal for Office, Work, School, or Picnic, Durable Material, Color: Black.",
   },
-  "71": {
-    id: 71,
+  "69": {
+    id: 69,
     image: productFirePitMat,
     name: "UNCO 36\" Round Fire Pit Mat – Fireproof & Portable",
     price: "$20",
@@ -732,8 +714,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Protect your deck or patio with this 36-inch round fire pit mat — double-sided, fireproof, and perfect for outdoor grills or fire pits. Reusable, waterproof, and easy to clean for safe and convenient use. 36\" Round Fire Pit Mat, Double-Sided & Fireproof Design, 3-Layer Durable Construction, Waterproof & Easy to Clean, Ideal for Outdoor Grills, Decks, or Patios.",
   },
-  "72": {
-    id: 72,
+  "70": {
+    id: 70,
     image: productToiletRug,
     name: "OLANLY Luxury U-Shaped Toilet Rug – Soft & Absorbent (Yellow)",
     price: "$15",
@@ -741,8 +723,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Upgrade your bathroom with this extra soft and plush U-shaped toilet rug. Made with absorbent microfiber and non-slip backing, it keeps your floor dry and comfortable. Machine washable for easy cleaning. U-Shaped Design for Toilet Base, Extra Soft & Absorbent Microfiber, Non-Slip Plush Shaggy Surface, Machine Washable & Quick Dry, Color: Yellow, Size: 24 x 20 inches.",
   },
-  "73": {
-    id: 73,
+  "71": {
+    id: 71,
     image: productPantyhose,
     name: "Women's Fashion Pantyhose – Soft & Comfortable",
     price: "$8",
@@ -750,8 +732,8 @@ const products: Record<string, Product> = {
     isNew: true,
     description: "Essential everyday pantyhose designed for all-day comfort and style. Soft, lightweight, and perfect for any outfit. Soft & Comfortable Material, Perfect for Everyday Wear, Lightweight & Stretchy, Fashionable & Versatile, Color: Black (or assorted), Size: One Size Fits Most.",
   },
-  "74": {
-    id: 74,
+  "72": {
+    id: 72,
     image: productBohoCurtainDetail,
     name: "Jinchan Boho Linen Curtains – Grey Farmhouse Style (84\")",
     price: "$25",

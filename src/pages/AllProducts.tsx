@@ -485,22 +485,6 @@ const allProducts: Product[] = [
   },
   {
     id: 50,
-    image: productAerostarFilters,
-    name: "Honeywell Air Filter Replacement – 20\" x 25\" x 4\" FC200E1037",
-    price: "$30",
-    category: "Home Appliances",
-    isNew: true,
-  },
-  {
-    id: 51,
-    image: productAerostarFilters,
-    name: "Nordic Pure Pleated Air Filters – 16x20x2 (3 Pack), MERV 12",
-    price: "$30",
-    category: "Home Appliances",
-    isNew: true,
-  },
-  {
-    id: 52,
     image: productFauxFurRug,
     name: "Faux Fur Fluffy Rug – White, 1.9 × 4.9 Feet",
     price: "$25",
@@ -508,7 +492,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 53,
+    id: 51,
     image: productGatorWheels,
     name: "Peg Perego Gator HPX Front Wheels – 2 Pack",
     price: "$20",
@@ -516,7 +500,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 54,
+    id: 52,
     image: productWindowTrim,
     name: "Savadicar 4-Piece Black Window Beltline Trim Cover – Ford F150 (2021-Present)",
     price: "$15",
@@ -524,7 +508,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 55,
+    id: 53,
     image: productCarpetProtector,
     name: "Uross Carpet Protector for Pets – 3.6FT, 2PCS",
     price: "$10",
@@ -532,7 +516,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 56,
+    id: 54,
     image: productVicksHumidifier,
     name: "Vicks Mini Filter Free Cool Mist Humidifier – Small Room",
     price: "$10",
@@ -540,7 +524,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 57,
+    id: 55,
     image: productRegisterPaper,
     name: "Cash Register Paper Rolls – For STAR SP700 & POS Printers (50 Rolls)",
     price: "$20",
@@ -548,7 +532,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 58,
+    id: 56,
     image: productDrillBitSet,
     name: "Mastercraft Drill & Screwdriver Bit Set – 253 Pieces",
     price: "$50",
@@ -556,7 +540,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 59,
+    id: 57,
     image: productCanvasDropcloth,
     name: "Everbilt Canvas Dropcloth – 3 ft. 9 in. x 14 ft. 9 in., Medium Duty",
     price: "$10",
@@ -564,7 +548,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 60,
+    id: 58,
     image: productSheetSander,
     name: "Mastercraft 2A Sheet Sander – Used / 1/3 Condition",
     price: "$20",
@@ -572,7 +556,7 @@ const allProducts: Product[] = [
     condition: "Used (1/3)",
   },
   {
-    id: 61,
+    id: 59,
     image: productWallLaundryBasket,
     name: "Wall Laundry Basket Folding Laundry Hamper – White",
     price: "$20",
@@ -580,7 +564,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 62,
+    id: 60,
     image: productCabinetPulls,
     name: "Franklin Brass P29618K-SN-B Satin Nickel 5-Inch Cabinet Pulls (10 Pack)",
     price: "$15",
@@ -588,7 +572,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 63,
+    id: 61,
     image: productWasherPump,
     name: "Trico 11-614 Spray Windshield Washer Pump (1 Pack)",
     price: "$15",
@@ -596,7 +580,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 64,
+    id: 62,
     image: productWaterSlide,
     name: "Inflatable Water Slide – Backyard Fun for Kids",
     price: "$25",
@@ -604,7 +588,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 65,
+    id: 63,
     image: productPillowCovers,
     name: "MIULEE Decorative Pillow Covers Combo – Set of 3 (White + Beige)",
     price: "$25",
@@ -612,7 +596,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 66,
+    id: 64,
     image: productStapler,
     name: "Arrow Fastener T50X Tac Mate Stapler – Grey",
     price: "$15",
@@ -620,7 +604,7 @@ const allProducts: Product[] = [
     condition: "Like New",
   },
   {
-    id: 67,
+    id: 65,
     image: productTablecloth,
     name: "Misaya Rectangle Vinyl Tablecloth – Green, 30\" × 72\"",
     price: "$15",
@@ -628,7 +612,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 68,
+    id: 66,
     image: productDogBedCover,
     name: "SUNNYTEX Waterproof Dog Bed Cover / Pet Blanket – Furniture Protector",
     price: "$15",
@@ -636,7 +620,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 69,
+    id: 67,
     image: productSeatCushion,
     name: "3D Inflatable Seat Cushion – Portable Comfort Pad",
     price: "$20",
@@ -644,7 +628,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 70,
+    id: 68,
     image: productLunchBox,
     name: "Lunch Box for Men & Women – Portable & Reusable",
     price: "$10",
@@ -652,7 +636,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 71,
+    id: 69,
     image: productFirePitMat,
     name: "UNCO 36\" Round Fire Pit Mat – Fireproof & Portable",
     price: "$20",
@@ -660,7 +644,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 72,
+    id: 70,
     image: productToiletRug,
     name: "OLANLY Luxury U-Shaped Toilet Rug – Soft & Absorbent (Yellow)",
     price: "$15",
@@ -668,7 +652,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 73,
+    id: 71,
     image: productPantyhose,
     name: "Women's Fashion Pantyhose – Soft & Comfortable",
     price: "$8",
@@ -676,7 +660,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 74,
+    id: 72,
     image: productBohoCurtainDetail,
     name: "Jinchan Boho Linen Curtains – Grey Farmhouse Style (84\")",
     price: "$25",
