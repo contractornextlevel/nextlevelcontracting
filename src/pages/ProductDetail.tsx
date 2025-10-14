@@ -24,6 +24,8 @@ import productChandelier from "@/assets/product-chandelier.jpeg";
 import productKodiakBoots from "@/assets/product-kodiak-boots.jpeg";
 import productIcHousing from "@/assets/product-ic-housing.jpeg";
 import productMassageGun from "@/assets/product-massage-gun.jpeg";
+import productInverter from "@/assets/product-inverter.jpeg";
+import productSunglasses from "@/assets/product-sunglasses.jpeg";
 
 // Product data
 type Product = {
@@ -233,6 +235,24 @@ const products: Record<string, Product> = {
     category: "Health & Wellness",
     isNew: true,
     description: "Soothe sore muscles and boost recovery with this powerful 30-speed massage gun perfect for athletes, gym users, or anyone needing deep tissue relief. Features 30 adjustable speed levels, multiple massage heads, quiet yet powerful motor, rechargeable battery, and includes carrying case.",
+  },
+  "23": {
+    id: 23,
+    image: productInverter,
+    name: "Power Bright 12V 400W Inverter",
+    price: "$20",
+    category: "Electronics",
+    isNew: true,
+    description: "Convert your 12V DC power to 110V AC with this Power Bright inverter — perfect for camping, RVs, or emergency backup power. 400 Watts continuous power, compact & portable design, safe & reliable operation.",
+  },
+  "24": {
+    id: 24,
+    image: productSunglasses,
+    name: "Guess GU 6096 Sunglasses",
+    price: "$45",
+    category: "Accessories",
+    condition: "Like New",
+    description: "Stylish and classic Guess sunglasses — perfect for everyday wear or special occasions. UV protection, trendy & comfortable fit. Excellent condition.",
   },
 };
 

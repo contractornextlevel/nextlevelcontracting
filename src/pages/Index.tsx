@@ -18,6 +18,8 @@ import productEyewash from "@/assets/product-eyewash.jpeg";
 import productPendantLight from "@/assets/product-pendant-light.jpeg";
 import productChandelier from "@/assets/product-chandelier.jpeg";
 import productKodiakBoots from "@/assets/product-kodiak-boots.jpeg";
+import productInverter from "@/assets/product-inverter.jpeg";
+import productSunglasses from "@/assets/product-sunglasses.jpeg";
 
 const Index = () => {
   // Featured Products
@@ -58,6 +60,22 @@ const Index = () => {
 
   // New Arrivals
   const newArrivals = [
+    {
+      id: 23,
+      image: productInverter,
+      name: "Power Bright 12V 400W Inverter",
+      price: "$20",
+      category: "Electronics",
+      isNew: true,
+    },
+    {
+      id: 24,
+      image: productSunglasses,
+      name: "Guess GU 6096 Sunglasses",
+      price: "$45",
+      category: "Accessories",
+      condition: "Like New",
+    },
     {
       id: 17,
       image: productEyewash,
@@ -104,22 +122,6 @@ const Index = () => {
       name: "Keurig K-Elite Single Serve Coffee Maker",
       price: "$120",
       category: "Appliances",
-      isNew: true,
-    },
-    {
-      id: 15,
-      image: productCommode,
-      name: "Drive Medical Steel Folding Frame Commode",
-      price: "$50",
-      category: "Medical Equipment",
-      isNew: true,
-    },
-    {
-      id: 16,
-      image: productJeepStorage,
-      name: "Center Console Hanging Storage Box for Jeep Wrangler",
-      price: "$10",
-      category: "Automotive Accessories",
       isNew: true,
     },
   ];
