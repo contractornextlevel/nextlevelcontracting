@@ -9,24 +9,24 @@ import serviceDelivery from "@/assets/service-delivery.jpg";
 const services = [
   {
     id: 1,
+    icon: Truck,
+    image: serviceDelivery,
+    title: "Resell Store",
+    description: "Browse our curated selection of quality pre-owned items. Find great deals on home goods, tools, and equipment with our buy-back guarantee.",
+  },
+  {
+    id: 2,
     icon: Wrench,
     image: serviceInstallation,
     title: "Professional Installation",
     description: "Expert installation services for lighting, fixtures, and home improvements. Our skilled team ensures quality workmanship.",
   },
   {
-    id: 2,
+    id: 3,
     icon: ClipboardCheck,
     image: serviceConsultation,
     title: "Free Consultation",
     description: "Get expert advice on your next project. We'll help you choose the right products and plan your home improvements.",
-  },
-  {
-    id: 3,
-    icon: Truck,
-    image: serviceDelivery,
-    title: "Delivery & Pickup",
-    description: "Fast and reliable delivery service for all your purchases. Local pickup options available for your convenience.",
   },
 ];
 
