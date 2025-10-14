@@ -17,30 +17,31 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Check if we're on homepage
+  // Check if we're on homepage or services page
   const isHomePage = window.location.pathname === '/';
+  const isServicesPage = window.location.pathname === '/services';
+  const useRoundedNav = isHomePage || isServicesPage;
   
   // Check if we're on a page that needs a solid navbar
   const isOnProductsPage = window.location.pathname.includes('/products') || 
-                           window.location.pathname.includes('/services') ||
                            window.location.pathname.includes('/contact');
   
   return (
     <nav className="fixed top-0 left-0 right-0 z-50">
       <div className={`transition-all duration-500 ${
-        isHomePage && !isScrolled
+        useRoundedNav && !isScrolled
           ? "container mx-auto px-4 sm:px-6 mt-4"
           : ""
       }`}>
         <div className={`transition-all duration-500 ${
-          isHomePage && !isScrolled
+          useRoundedNav && !isScrolled
             ? "bg-white/20 backdrop-blur-md rounded-full border border-white/30 shadow-xl px-6 py-3"
             : isScrolled || isOnProductsPage
               ? "bg-background/98 backdrop-blur-xl border-b border-border shadow-lg px-4 sm:px-6 py-3 sm:py-4"
               : "bg-transparent px-4 sm:px-6 py-3 sm:py-4"
         }`}>
           <div className={`flex items-center justify-between ${
-            isHomePage && !isScrolled ? "container mx-auto" : ""
+            useRoundedNav && !isScrolled ? "container mx-auto" : ""
           }`}>
             {/* Logo - Enhanced visibility with shadow */}
             <Link to="/" className="flex items-center group">
@@ -48,13 +49,13 @@ export const Navbar = () => {
                 src={logo} 
                 alt="Next Level Contracting" 
                 className={`w-auto transition-all duration-500 group-hover:scale-105 ${
-                  isHomePage && !isScrolled
+                  useRoundedNav && !isScrolled
                     ? "h-12 sm:h-14" 
                     : isScrolled || isOnProductsPage
                       ? "h-14 sm:h-16 md:h-18 lg:h-20" 
                       : "h-16 sm:h-18 md:h-20 lg:h-24 drop-shadow-[0_0_15px_rgba(255,255,255,0.9)]"
                 }`}
-                style={!isScrolled && !isOnProductsPage && !isHomePage ? { filter: "brightness(1.1)" } : {}}
+                style={!isScrolled && !isOnProductsPage && !useRoundedNav ? { filter: "brightness(1.1)" } : {}}
               />
             </Link>
 
@@ -64,7 +65,7 @@ export const Navbar = () => {
                 <Button 
                   variant="ghost" 
                   className={`text-sm font-medium hover:text-accent transition-all duration-300 ${
-                    isHomePage && !isScrolled
+                    useRoundedNav && !isScrolled
                       ? "text-white hover:bg-white/20"
                       : !isScrolled && !isOnProductsPage 
                         ? "text-white hover:bg-white/10" 
@@ -78,7 +79,7 @@ export const Navbar = () => {
                 <Button 
                   variant="ghost" 
                   className={`text-sm font-medium hover:text-accent transition-all duration-300 ${
-                    isHomePage && !isScrolled
+                    useRoundedNav && !isScrolled
                       ? "text-white hover:bg-white/20"
                       : !isScrolled && !isOnProductsPage 
                         ? "text-white hover:bg-white/10" 
@@ -92,7 +93,7 @@ export const Navbar = () => {
                 <Button 
                   variant="ghost" 
                   className={`text-sm font-medium hover:text-accent transition-all duration-300 ${
-                    isHomePage && !isScrolled
+                    useRoundedNav && !isScrolled
                       ? "text-white hover:bg-white/20"
                       : !isScrolled && !isOnProductsPage 
                         ? "text-white hover:bg-white/10" 
@@ -106,7 +107,7 @@ export const Navbar = () => {
                 <Button 
                   variant="ghost" 
                   className={`text-sm font-medium hover:text-accent transition-all duration-300 ${
-                    isHomePage && !isScrolled
+                    useRoundedNav && !isScrolled
                       ? "text-white hover:bg-white/20"
                       : !isScrolled && !isOnProductsPage 
                         ? "text-white hover:bg-white/10" 
@@ -125,7 +126,7 @@ export const Navbar = () => {
                 variant="ghost" 
                 size="icon" 
                 className={`relative transition-all duration-300 ${
-                  isHomePage && !isScrolled
+                  useRoundedNav && !isScrolled
                     ? "text-white hover:bg-white/20"
                     : !isScrolled && !isOnProductsPage
                       ? "text-white hover:bg-white/10" 
@@ -146,7 +147,7 @@ export const Navbar = () => {
                 variant="ghost" 
                 size="icon" 
                 className={`md:hidden transition-all duration-300 ${
-                  isHomePage && !isScrolled
+                  useRoundedNav && !isScrolled
                     ? "text-white hover:bg-white/20"
                     : !isScrolled && !isOnProductsPage 
                       ? "text-white hover:bg-white/10" 
