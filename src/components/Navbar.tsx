@@ -18,7 +18,9 @@ export const Navbar = () => {
   }, []);
 
   // Check if we're on a page that needs a solid navbar
-  const isOnProductsPage = window.location.pathname.includes('/products');
+  const isOnProductsPage = window.location.pathname.includes('/products') || 
+                           window.location.pathname.includes('/services') ||
+                           window.location.pathname.includes('/contact');
   
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -64,7 +66,7 @@ export const Navbar = () => {
                 All Products
               </Button>
             </Link>
-            <a href="/#categories">
+            <Link to="/services">
               <Button 
                 variant="ghost" 
                 className={`text-sm font-medium hover:text-accent transition-all duration-300 ${
@@ -73,7 +75,7 @@ export const Navbar = () => {
               >
                 Services
               </Button>
-            </a>
+            </Link>
             <Link to="/contact">
               <Button 
                 variant="ghost" 

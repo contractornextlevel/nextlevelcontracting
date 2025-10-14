@@ -1,4 +1,5 @@
 import { ArrowRight, Wrench, ClipboardCheck, Truck } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import serviceInstallation from "@/assets/service-installation.jpg";
@@ -43,13 +44,15 @@ export const ServicesShowcase = () => {
               What We Offer
             </h2>
           </div>
-          <Button 
-            variant="outline" 
-            className="rounded-full px-5 sm:px-6 gap-2 group self-start sm:self-auto"
-          >
-            View More
-            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <Link to="/services">
+            <Button 
+              variant="outline" 
+              className="rounded-full px-5 sm:px-6 gap-2 group self-start sm:self-auto"
+            >
+              View More
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
         </div>
 
         {/* Services Grid */}
