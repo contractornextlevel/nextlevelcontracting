@@ -35,6 +35,14 @@ import productShowerCurtain from "@/assets/product-shower-curtain.jpeg";
 import productBlackoutCurtain from "@/assets/product-blackout-curtain.jpeg";
 import productDrainStopper from "@/assets/product-drain-stopper.jpeg";
 import productWirelessCharger from "@/assets/product-wireless-charger.jpeg";
+import productChristmasDvd from "@/assets/product-christmas-dvd.jpeg";
+import productElfDoll from "@/assets/product-elf-doll.jpeg";
+import productScreenProtector from "@/assets/product-screen-protector.jpeg";
+import productFogLight from "@/assets/product-fog-light.jpeg";
+import productValanceCurtain from "@/assets/product-valance-curtain.jpeg";
+import productVacuumFilters from "@/assets/product-vacuum-filters.jpeg";
+import productCasterWheel from "@/assets/product-caster-wheel.jpeg";
+import productSunShade from "@/assets/product-sun-shade.jpeg";
 
 // Product data
 type Product = {
@@ -343,6 +351,78 @@ const products: Record<string, Product> = {
     category: "Electronics",
     isNew: true,
     description: "Charge your devices fast and wirelessly with this slim, magnetic wireless charger — stylish, portable, and reliable. Slim & lightweight design, magnetic alignment for easy charging, braided nylon cable – durable & tangle-free, compatible with Qi-enabled devices.",
+  },
+  "34": {
+    id: 34,
+    image: productChristmasDvd,
+    name: "The Original Christmas Specials Collection DVD",
+    price: "$10",
+    category: "Entertainment",
+    condition: "Like New",
+    description: "Enjoy the magic of the holidays with this classic Christmas DVD collection — perfect for family movie nights! Includes multiple holiday specials. Great condition, perfect gift or holiday entertainment.",
+  },
+  "35": {
+    id: 35,
+    image: productElfDoll,
+    name: "10\" Elf Doll with a Book – Perfect for Kids 3-10",
+    price: "$10",
+    category: "Toys",
+    isNew: true,
+    description: "Adorable elf doll with a book — a great gift idea for kids! Fun, educational, and perfect for playtime. Size: 10 inches, includes book, great for kids ages 3-10. Brand new – never used.",
+  },
+  "36": {
+    id: 36,
+    image: productScreenProtector,
+    name: "Peslv Magnetic Anti Blue Light Screen Protector – MacBook Pro 14\"",
+    price: "$10",
+    category: "Electronics",
+    isNew: true,
+    description: "Protect your eyes and your MacBook screen with this magnetic anti-blue light filter — easy to install and removable. Fits 14.2\" MacBook Pro (2021-2024, M1, M2, M3, M4). Magnetic attachment – easy to apply & remove, reduces glare & blocks blue light, protects screen from scratches & dust, removable & reusable.",
+  },
+  "37": {
+    id: 37,
+    image: productFogLight,
+    name: "KaiDengZhe 2PCS H3 LED Fog Light Bulbs – 6000K White",
+    price: "$10",
+    category: "Automotive",
+    isNew: true,
+    description: "Upgrade your vehicle's fog lights with these super bright LED bulbs — perfect for safer driving in any weather. 2PCS H3 LED Bulbs, 55W, 6000K bright white light, 600% brighter than standard halogen, mini size – fits standard fog light sockets, rapid heat dissipation – long lasting, ideal for fog lamps & DRL.",
+  },
+  "38": {
+    id: 38,
+    image: productValanceCurtain,
+    name: "Feelyou Cute Christmas Valance Curtain – 1 Panel 52\"x12\"",
+    price: "$8",
+    category: "Home Decor",
+    isNew: true,
+    description: "Decorate your kitchen or bathroom with this cute Christmas valance curtain. Perfect for adding a fun and festive touch to your home! Size: 52\"x12\", 1 panel, Christmas Axolotl/Salamander design, ideal for kitchen, bathroom, or windows. Festive decoration.",
+  },
+  "39": {
+    id: 39,
+    image: productVacuumFilters,
+    name: "BuyParts 2 HEPA + 4 Foam Filters for Shark Vacuum",
+    price: "$10",
+    category: "Home Appliances",
+    isNew: true,
+    description: "Keep your Shark Navigator Lift-Away vacuum running like new with this replacement filter set — includes HEPA and foam filters. Fits Models: NV350, NV351, NV352, NV355, NV356E, NV357, NV360, NV370, NV391, UV440, UV490, UV500, UV540, UV541, UV550. Part Numbers: XFF350, XHF350. Includes 2 HEPA + 4 foam filters. Easy to install.",
+  },
+  "40": {
+    id: 40,
+    image: productCasterWheel,
+    name: "Caster Wheel for Ridgid Wet Dry Shop Vac",
+    price: "$10",
+    category: "Tools & Hardware",
+    isNew: true,
+    description: "Replace your old or broken caster wheel with this durable replacement — perfect for Ridgid shop vacs. Fits Ridgid Wet Dry Shop Vac, easy to install, durable & reliable.",
+  },
+  "41": {
+    id: 41,
+    image: productSunShade,
+    name: "XHRING Windshield Sun Shade – Fits Kia Models",
+    price: "$12",
+    category: "Automotive",
+    isNew: true,
+    description: "Protect your car interior from sun and heat with this durable windshield sun shade — perfect for multiple Kia models. Fits: Kia K5 2021-2026, Optima 2011-2020, Soul 2010-2025, Sportage 1995-2026, Seltos 2020-, Forte 2019-2025, Rio. Blocks sun & reduces heat, easy to install & remove, protects dashboard & interior, durable & foldable design.",
   },
 };
 

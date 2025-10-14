@@ -23,6 +23,25 @@ import productChandelier from "@/assets/product-chandelier.jpeg";
 import productKodiakBoots from "@/assets/product-kodiak-boots.jpeg";
 import productIcHousing from "@/assets/product-ic-housing.jpeg";
 import productMassageGun from "@/assets/product-massage-gun.jpeg";
+import productInverter from "@/assets/product-inverter.jpeg";
+import productSunglasses from "@/assets/product-sunglasses.jpeg";
+import productAirConditioner from "@/assets/product-air-conditioner.jpeg";
+import productJvcHeadphones from "@/assets/product-jvc-headphones.jpeg";
+import productGamingHeadset from "@/assets/product-gaming-headset.jpeg";
+import productPowerbank from "@/assets/product-powerbank.jpeg";
+import productAirDuster from "@/assets/product-air-duster.jpeg";
+import productShowerCurtain from "@/assets/product-shower-curtain.jpeg";
+import productBlackoutCurtain from "@/assets/product-blackout-curtain.jpeg";
+import productDrainStopper from "@/assets/product-drain-stopper.jpeg";
+import productWirelessCharger from "@/assets/product-wireless-charger.jpeg";
+import productChristmasDvd from "@/assets/product-christmas-dvd.jpeg";
+import productElfDoll from "@/assets/product-elf-doll.jpeg";
+import productScreenProtector from "@/assets/product-screen-protector.jpeg";
+import productFogLight from "@/assets/product-fog-light.jpeg";
+import productValanceCurtain from "@/assets/product-valance-curtain.jpeg";
+import productVacuumFilters from "@/assets/product-vacuum-filters.jpeg";
+import productCasterWheel from "@/assets/product-caster-wheel.jpeg";
+import productSunShade from "@/assets/product-sun-shade.jpeg";
 
 interface Product {
   id: number;
@@ -207,6 +226,158 @@ const allProducts: Product[] = [
     name: "Deep Tissue Fascia Relaxer – 30-Speed Muscle Massager",
     price: "$45",
     category: "Health & Wellness",
+    isNew: true,
+  },
+  {
+    id: 23,
+    image: productInverter,
+    name: "Power Bright 12V 400W Inverter",
+    price: "$20",
+    category: "Electronics",
+    isNew: true,
+  },
+  {
+    id: 24,
+    image: productSunglasses,
+    name: "Guess GU 6096 Sunglasses",
+    price: "$45",
+    category: "Accessories",
+    condition: "Like New",
+  },
+  {
+    id: 25,
+    image: productAirConditioner,
+    name: "Portable Air Conditioner 4-in-1 Mini Evaporative Cooler",
+    price: "$25",
+    category: "Home Appliances",
+    isNew: true,
+  },
+  {
+    id: 26,
+    image: productJvcHeadphones,
+    name: "JVC HA-S36W Bluetooth Headphones",
+    price: "$40",
+    category: "Electronics",
+    isNew: true,
+  },
+  {
+    id: 27,
+    image: productGamingHeadset,
+    name: "BINNUNE Wireless Gaming Headset",
+    price: "$20",
+    category: "Electronics",
+    condition: "Great",
+  },
+  {
+    id: 28,
+    image: productPowerbank,
+    name: "Philips Power Bank 10,000 mAh",
+    price: "$20",
+    category: "Electronics",
+    isNew: true,
+  },
+  {
+    id: 29,
+    image: productAirDuster,
+    name: "CAGIWIRU Compressed Air Duster 4.0 – Cordless Electric Air Blower",
+    price: "$20",
+    category: "Electronics",
+    isNew: true,
+  },
+  {
+    id: 30,
+    image: productShowerCurtain,
+    name: "AmazerBath Shower Curtain Liner – 72x72 Beige",
+    price: "$12",
+    category: "Home & Bath",
+    isNew: true,
+  },
+  {
+    id: 31,
+    image: productBlackoutCurtain,
+    name: "H.VERSAILTEX Blackout Curtain – Storm Blue, 52\" W × 96\" L",
+    price: "$20",
+    category: "Home Decor",
+    isNew: true,
+  },
+  {
+    id: 32,
+    image: productDrainStopper,
+    name: "Generic Bathroom Sink Drain Stopper – Pop-Up Hair Catcher",
+    price: "$5",
+    category: "Home & Bath",
+    isNew: true,
+  },
+  {
+    id: 33,
+    image: productWirelessCharger,
+    name: "HaloLock™️ MINI Wireless Charger – Slim Magnetic",
+    price: "$10",
+    category: "Electronics",
+    isNew: true,
+  },
+  {
+    id: 34,
+    image: productChristmasDvd,
+    name: "The Original Christmas Specials Collection DVD",
+    price: "$10",
+    category: "Entertainment",
+    condition: "Like New",
+  },
+  {
+    id: 35,
+    image: productElfDoll,
+    name: "10\" Elf Doll with a Book – Perfect for Kids 3-10",
+    price: "$10",
+    category: "Toys",
+    isNew: true,
+  },
+  {
+    id: 36,
+    image: productScreenProtector,
+    name: "Peslv Magnetic Anti Blue Light Screen Protector – MacBook Pro 14\"",
+    price: "$10",
+    category: "Electronics",
+    isNew: true,
+  },
+  {
+    id: 37,
+    image: productFogLight,
+    name: "KaiDengZhe 2PCS H3 LED Fog Light Bulbs – 6000K White",
+    price: "$10",
+    category: "Automotive",
+    isNew: true,
+  },
+  {
+    id: 38,
+    image: productValanceCurtain,
+    name: "Feelyou Cute Christmas Valance Curtain – 1 Panel 52\"x12\"",
+    price: "$8",
+    category: "Home Decor",
+    isNew: true,
+  },
+  {
+    id: 39,
+    image: productVacuumFilters,
+    name: "BuyParts 2 HEPA + 4 Foam Filters for Shark Vacuum",
+    price: "$10",
+    category: "Home Appliances",
+    isNew: true,
+  },
+  {
+    id: 40,
+    image: productCasterWheel,
+    name: "Caster Wheel for Ridgid Wet Dry Shop Vac",
+    price: "$10",
+    category: "Tools & Hardware",
+    isNew: true,
+  },
+  {
+    id: 41,
+    image: productSunShade,
+    name: "XHRING Windshield Sun Shade – Fits Kia Models",
+    price: "$12",
+    category: "Automotive",
     isNew: true,
   },
 ];

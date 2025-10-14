@@ -62,73 +62,6 @@ const Index = () => {
     },
   ];
 
-  // New Arrivals
-  const newArrivals = [
-    {
-      id: 25,
-      image: productAirConditioner,
-      name: "Portable Air Conditioner 4-in-1 Mini Evaporative Cooler",
-      price: "$25",
-      category: "Home Appliances",
-      isNew: true,
-    },
-    {
-      id: 26,
-      image: productJvcHeadphones,
-      name: "JVC HA-S36W Bluetooth Headphones",
-      price: "$40",
-      category: "Electronics",
-      isNew: true,
-    },
-    {
-      id: 28,
-      image: productPowerbank,
-      name: "Philips Power Bank 10,000 mAh",
-      price: "$20",
-      category: "Electronics",
-      isNew: true,
-    },
-    {
-      id: 33,
-      image: productWirelessCharger,
-      name: "HaloLock™️ MINI Wireless Charger – Slim Magnetic",
-      price: "$10",
-      category: "Electronics",
-      isNew: true,
-    },
-    {
-      id: 23,
-      image: productInverter,
-      name: "Power Bright 12V 400W Inverter",
-      price: "$20",
-      category: "Electronics",
-      isNew: true,
-    },
-    {
-      id: 24,
-      image: productSunglasses,
-      name: "Guess GU 6096 Sunglasses",
-      price: "$45",
-      category: "Accessories",
-      condition: "Like New",
-    },
-    {
-      id: 17,
-      image: productEyewash,
-      name: "CGOLDENWALL Portable Eye Wash Station",
-      price: "$20",
-      category: "Safety Equipment",
-      isNew: true,
-    },
-    {
-      id: 18,
-      image: productPendantLight,
-      name: "Epic Lighting Coventry Pendant Light",
-      price: "$30",
-      category: "Lighting",
-      isNew: true,
-    },
-  ];
 
   // Top Sellers
   const topSellers = [
@@ -178,19 +111,12 @@ const Index = () => {
 
       <div className="bg-card py-24">
         <ProductGrid 
-          id="new-arrivals"
-          products={newArrivals}
-          title="New Arrivals"
-          subtitle="Fresh stock just added to our collection"
+          id="top-sellers"
+          products={topSellers}
+          title="Top Sellers"
+          subtitle="Customer favorites that keep coming back"
         />
       </div>
-
-      <ProductGrid 
-        id="top-sellers"
-        products={topSellers}
-        title="Top Sellers"
-        subtitle="Customer favorites that keep coming back"
-      />
 
       <Footer />
     </div>
