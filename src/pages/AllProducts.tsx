@@ -62,6 +62,14 @@ import productWindowTrim from "@/assets/product-window-trim.jpeg";
 import productCarpetProtector from "@/assets/product-carpet-protector.jpeg";
 import productVicksHumidifier from "@/assets/product-vicks-humidifier.jpeg";
 import productRegisterPaper from "@/assets/product-register-paper.jpeg";
+import productDrillBitSet from "@/assets/product-drill-bit-set.jpeg";
+import productCanvasDropcloth from "@/assets/product-canvas-dropcloth.jpeg";
+import productSheetSander from "@/assets/product-sheet-sander.jpeg";
+import productWallLaundryBasket from "@/assets/product-wall-laundry-basket.jpeg";
+import productCabinetPulls from "@/assets/product-cabinet-pulls.jpeg";
+import productWasherPump from "@/assets/product-washer-pump.jpeg";
+import productWaterSlide from "@/assets/product-water-slide.jpeg";
+import productPillowCovers from "@/assets/product-pillow-covers.jpeg";
 
 interface Product {
   id: number;
@@ -528,6 +536,70 @@ const allProducts: Product[] = [
     name: "Cash Register Paper Rolls – For STAR SP700 & POS Printers (50 Rolls)",
     price: "$20",
     category: "Office Equipment",
+    isNew: true,
+  },
+  {
+    id: 58,
+    image: productDrillBitSet,
+    name: "Mastercraft Drill & Screwdriver Bit Set – 253 Pieces",
+    price: "$50",
+    category: "Power Tools",
+    isNew: true,
+  },
+  {
+    id: 59,
+    image: productCanvasDropcloth,
+    name: "Everbilt Canvas Dropcloth – 3 ft. 9 in. x 14 ft. 9 in., Medium Duty",
+    price: "$10",
+    category: "Tools & Hardware",
+    isNew: true,
+  },
+  {
+    id: 60,
+    image: productSheetSander,
+    name: "Mastercraft 2A Sheet Sander – Used / 1/3 Condition",
+    price: "$20",
+    category: "Power Tools",
+    condition: "Used (1/3)",
+  },
+  {
+    id: 61,
+    image: productWallLaundryBasket,
+    name: "Wall Laundry Basket Folding Laundry Hamper – White",
+    price: "$20",
+    category: "Storage & Organization",
+    isNew: true,
+  },
+  {
+    id: 62,
+    image: productCabinetPulls,
+    name: "Franklin Brass P29618K-SN-B Satin Nickel 5-Inch Cabinet Pulls (10 Pack)",
+    price: "$15",
+    category: "Tools & Hardware",
+    isNew: true,
+  },
+  {
+    id: 63,
+    image: productWasherPump,
+    name: "Trico 11-614 Spray Windshield Washer Pump (1 Pack)",
+    price: "$15",
+    category: "Automotive",
+    isNew: true,
+  },
+  {
+    id: 64,
+    image: productWaterSlide,
+    name: "Inflatable Water Slide – Backyard Fun for Kids",
+    price: "$25",
+    category: "Toys",
+    isNew: true,
+  },
+  {
+    id: 65,
+    image: productPillowCovers,
+    name: "MIULEE Decorative Pillow Covers Combo – Set of 3 (White + Beige)",
+    price: "$25",
+    category: "Home Decor",
     isNew: true,
   },
 ];
