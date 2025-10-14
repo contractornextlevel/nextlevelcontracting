@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Mail, Phone, Clock } from "lucide-react";
-import logo from "@/assets/logo-outline.jpg";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   return (
@@ -13,7 +13,7 @@ export const Footer = () => {
             <img 
               src={logo} 
               alt="Next Level Contracting" 
-              className="h-12 w-auto brightness-0 invert opacity-90" 
+              className="h-12 w-auto" 
             />
             <p className="text-sm text-primary-foreground/70 leading-relaxed">
               Your trusted marketplace for quality products at unbeatable prices. From tools to home essentials.
