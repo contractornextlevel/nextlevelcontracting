@@ -3,6 +3,8 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
+import { useCart } from "@/contexts/CartContext";
+import { toast } from "sonner";
 
 interface ProductCardProps {
   id: number;
@@ -15,6 +17,20 @@ interface ProductCardProps {
 }
 
 export const ProductCard = ({ id, image, name, price, category, condition, isNew }: ProductCardProps) => {
+  const { addToCart } = useCart();
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault();
+    addToCart({
+      id,
+      name,
+      price,
+      image,
+      category,
+    });
+    toast.success(`Added ${name} to cart!`);
+  };
+
   return (
     <Card className="group relative overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-xl">
       <Link to={`/product/${id}`} className="block">
@@ -55,10 +71,7 @@ export const ProductCard = ({ id, image, name, price, category, condition, isNew
             <Button 
               size="sm"
               className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-md hover:shadow-lg transition-all rounded-full px-4"
-              onClick={(e) => {
-                e.preventDefault();
-                // Add to cart logic here
-              }}
+              onClick={handleAddToCart}
             >
               <ShoppingCart className="h-4 w-4 mr-1" />
               Add

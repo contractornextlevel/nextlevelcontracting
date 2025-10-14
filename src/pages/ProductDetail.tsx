@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, ShoppingCart, Plus, Minus } from "lucide-react";
 import { toast } from "sonner";
+import { useCart } from "@/contexts/CartContext";
 
 // Import product images
 import productBoots from "@/assets/product-boots.jpeg";
@@ -529,6 +530,7 @@ const products: Record<string, Product> = {
 const ProductDetail = () => {
   const { id } = useParams();
   const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
   
   const product = products[id as keyof typeof products];
 
@@ -551,6 +553,14 @@ const ProductDetail = () => {
   }
 
   const handleAddToCart = () => {
+    addToCart({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image,
+      category: product.category,
+      quantity: quantity,
+    });
     toast.success(`Added ${quantity} ${product.name} to cart!`, {
       description: `Total: ${product.price}`,
     });
