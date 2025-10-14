@@ -81,6 +81,7 @@ import productFirePitMat from "@/assets/product-fire-pit-mat.jpeg";
 import productToiletRug from "@/assets/product-toilet-rug.jpeg";
 import productPantyhose from "@/assets/product-pantyhose.jpeg";
 import productBohoCurtainDetail from "@/assets/product-boho-curtain-detail.jpeg";
+import { products as baseProducts } from "@/data/products";
 
 // Product data
 type Product = {
