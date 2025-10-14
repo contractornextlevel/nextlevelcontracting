@@ -104,11 +104,11 @@ const Index = () => {
       <Navbar />
       <Hero />
       
-      {/* Services Showcase */}
-      <ServicesShowcase />
-      
-      {/* Category Showcase */}
+      {/* Category Showcase - New Section */}
       <CategoryShowcase />
+      
+      {/* Services Showcase - New Section */}
+      <ServicesShowcase />
       
       {/* Featured Products */}
       <div className="relative">
