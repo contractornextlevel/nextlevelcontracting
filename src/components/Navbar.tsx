@@ -2,7 +2,7 @@ import { ShoppingCart, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.svg";
 import { useState, useEffect } from "react";
 
 export const Navbar = () => {
@@ -50,10 +50,10 @@ export const Navbar = () => {
                 alt="Next Level Contracting" 
                 className={`w-auto transition-all duration-500 group-hover:scale-105 ${
                   useRoundedNav && !isScrolled
-                    ? "h-12 sm:h-14" 
+                    ? "h-20 sm:h-24 md:h-28" 
                     : isScrolled || isOnProductsPage
-                      ? "h-14 sm:h-16 md:h-18 lg:h-20" 
-                      : "h-16 sm:h-18 md:h-20 lg:h-24 drop-shadow-[0_0_15px_rgba(255,255,255,0.9)]"
+                      ? "h-16 sm:h-20 md:h-22 lg:h-24" 
+                      : "h-20 sm:h-24 md:h-28 lg:h-32 drop-shadow-[0_0_15px_rgba(255,255,255,0.9)]"
                 }`}
                 style={!isScrolled && !isOnProductsPage && !useRoundedNav ? { filter: "brightness(1.1)" } : {}}
               />
