@@ -7,161 +7,181 @@ import productMassageGun from "@/assets/product-massage-gun.jpeg";
 
 export const CategoryShowcase = () => {
   return (
-    <section id="categories" className="relative py-12 sm:py-16 md:py-20 overflow-hidden -mt-1">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background" />
-      
-      <div className="container relative z-10 mx-auto px-4 sm:px-6">
-        {/* Section header - Mobile optimized */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6 tracking-tight">
-            Shop by Category
+    <section id="categories" className="relative py-8 sm:py-12 md:py-16 overflow-hidden bg-gradient-to-b from-background to-muted/20">
+      <div className="container mx-auto px-4 sm:px-6">
+        {/* Section header - Clean and minimal */}
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3 sm:mb-4">
+            Explore Our Best-Selling
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
-            Curated collections for every need
+          <p className="text-sm sm:text-base text-muted-foreground">
+            Discover quality products across our curated categories
           </p>
         </div>
 
-        {/* Split layout sections - Mobile first, tighter spacing */}
-        <div className="space-y-12 sm:space-y-16 md:space-y-20">
-          {/* Tools & Equipment */}
-          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-center">
-            <div className="space-y-4 sm:space-y-5 order-2 lg:order-1">
-              <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-accent/10 border border-accent/20">
-                <Zap className="h-3 w-3 sm:h-4 sm:w-4 text-accent" />
-                <span className="text-xs sm:text-sm font-semibold text-accent">Power Tools</span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight">
-                Professional Grade Tools
-              </h3>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                From power drills to work lights, find the equipment you need for any job.
-              </p>
-              <div className="pt-2 sm:pt-4">
-                <Link to="/products">
-                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-5 sm:px-6 text-sm sm:text-base group">
-                    Shop Tools
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </Link>
-              </div>
+        {/* Best Selling Cards - Mobile first grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16">
+          {/* Card 1 - Tools */}
+          <div className="group relative bg-card rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-border/50">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img 
+                src={productLight} 
+                alt="Power Tools"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
             </div>
-            <div className="relative order-1 lg:order-2 group">
-              <div className="aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl">
-                <img 
-                  src={productLight} 
-                  alt="Tools & Equipment"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <div className="absolute -bottom-4 -left-4 bg-accent text-accent-foreground px-4 sm:px-6 py-3 sm:py-4 rounded-xl sm:rounded-2xl shadow-xl">
-                <div className="text-2xl sm:text-3xl font-bold">50+</div>
-                <div className="text-xs sm:text-sm">Products</div>
-              </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+              <h3 className="text-white text-xl sm:text-2xl font-bold mb-2">
+                Power Tools & Equipment
+              </h3>
+              <p className="text-white/80 text-xs sm:text-sm mb-3 sm:mb-4">Professional grade tools for any job</p>
+              <Link to="/products">
+                <Button className="bg-white text-foreground hover:bg-white/90 rounded-full px-4 sm:px-6 text-xs sm:text-sm">
+                  Explore
+                </Button>
+              </Link>
             </div>
           </div>
 
-          {/* Home & Living */}
-          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-center">
-            <div className="relative group">
-              <div className="aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl">
-                <img 
-                  src={productChandelier} 
-                  alt="Home & Living"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-4 sm:px-6 py-3 sm:py-4 rounded-xl sm:rounded-2xl shadow-xl">
-                <div className="text-2xl sm:text-3xl font-bold">New</div>
-                <div className="text-xs sm:text-sm">Arrivals</div>
-              </div>
+          {/* Card 2 - Home */}
+          <div className="group relative bg-card rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-border/50">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img 
+                src={productChandelier} 
+                alt="Home & Living"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
             </div>
-            <div className="space-y-4 sm:space-y-5">
-              <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-primary/10 border border-primary/20">
-                <Heart className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
-                <span className="text-xs sm:text-sm font-semibold text-primary">Home Essentials</span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight">
-                Transform Your Space
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+              <h3 className="text-white text-xl sm:text-2xl font-bold mb-2">
+                Home & Living
               </h3>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                Lighting, furniture, and decor to make your house a home.
-              </p>
-              <div className="pt-2 sm:pt-4">
-                <Link to="/products">
-                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-5 sm:px-6 text-sm sm:text-base group">
-                    Browse Home
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </Link>
-              </div>
+              <p className="text-white/80 text-xs sm:text-sm mb-3 sm:mb-4">Transform your space with style</p>
+              <Link to="/products">
+                <Button className="bg-white text-foreground hover:bg-white/90 rounded-full px-4 sm:px-6 text-xs sm:text-sm">
+                  Explore
+                </Button>
+              </Link>
             </div>
           </div>
 
-          {/* Electronics - Mobile optimized */}
-          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-center">
-            <div className="space-y-4 sm:space-y-5 order-2 lg:order-1">
-              <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-accent/10 border border-accent/20">
-                <Package className="h-3 w-3 sm:h-4 sm:w-4 text-accent" />
-                <span className="text-xs sm:text-sm font-semibold text-accent">Electronics</span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight">
-                Tech & More
+          {/* Card 3 - Electronics */}
+          <div className="group relative bg-card rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-border/50 sm:col-span-2 lg:col-span-1">
+            <div className="aspect-[4/3] overflow-hidden">
+              <img 
+                src={productMassageGun} 
+                alt="Electronics"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+              <h3 className="text-white text-xl sm:text-2xl font-bold mb-2">
+                Electronics & Tech
               </h3>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                From headphones to power banks, discover the latest electronics.
-              </p>
-              <div className="pt-2 sm:pt-4">
-                <Link to="/products">
-                  <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-5 sm:px-6 text-sm sm:text-base group">
-                    Shop Electronics
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              <p className="text-white/80 text-xs sm:text-sm mb-3 sm:mb-4">Latest gadgets and accessories</p>
+              <Link to="/products">
+                <Button className="bg-white text-foreground hover:bg-white/90 rounded-full px-4 sm:px-6 text-xs sm:text-sm">
+                  Explore
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Product Categories List - Modern vertical layout */}
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-6 sm:mb-8 text-center">
+            Product Categories
+          </h2>
+          
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-start">
+            {/* Categories List */}
+            <div className="space-y-3 sm:space-y-4">
+              <Link to="/products" className="group flex items-center justify-between p-4 rounded-xl hover:bg-muted/50 transition-all duration-300">
+                <span className="text-base sm:text-lg font-medium text-foreground">Tools & Equipment</span>
+                <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-accent group-hover:translate-x-2 transition-all" />
+              </Link>
+              <Link to="/products" className="group flex items-center justify-between p-4 rounded-xl hover:bg-muted/50 transition-all duration-300">
+                <span className="text-base sm:text-lg font-medium text-foreground">Home Essentials</span>
+                <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-accent group-hover:translate-x-2 transition-all" />
+              </Link>
+              <Link to="/products" className="group flex items-center justify-between p-4 rounded-xl hover:bg-muted/50 transition-all duration-300">
+                <span className="text-base sm:text-lg font-medium text-foreground">Electronics</span>
+                <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-accent group-hover:translate-x-2 transition-all" />
+              </Link>
+              <Link to="/products" className="group flex items-center justify-between p-4 rounded-xl hover:bg-muted/50 transition-all duration-300">
+                <span className="text-base sm:text-lg font-medium text-foreground">Safety Gear</span>
+                <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-accent group-hover:translate-x-2 transition-all" />
+              </Link>
+              <Link to="/products" className="group flex items-center justify-between p-4 rounded-xl hover:bg-muted/50 transition-all duration-300">
+                <span className="text-base sm:text-lg font-medium text-foreground">Seasonal Items</span>
+                <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-accent group-hover:translate-x-2 transition-all" />
+              </Link>
+            </div>
+
+            {/* Featured Stats Card */}
+            <div className="bg-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-xl border border-border/50">
+              <div className="space-y-6">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                    <Package className="h-4 w-4 text-accent" />
+                    <span className="text-xs font-semibold text-accent">100% Quality</span>
+                  </div>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
+                    350+
+                  </h3>
+                  <p className="text-sm text-muted-foreground">Products Available</p>
+                </div>
+                
+                <div className="pt-4 border-t border-border">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <div className="text-xl sm:text-2xl font-bold text-foreground">4.9★</div>
+                      <div className="text-xs text-muted-foreground">Customer Rating</div>
+                    </div>
+                    <div>
+                      <div className="text-xl sm:text-2xl font-bold text-foreground">50+</div>
+                      <div className="text-xs text-muted-foreground">Categories</div>
+                    </div>
+                  </div>
+                </div>
+
+                <Link to="/products" className="block">
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
+                    View All Products
                   </Button>
                 </Link>
-              </div>
-            </div>
-            <div className="relative order-1 lg:order-2 group">
-              <div className="aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl">
-                <img 
-                  src={productMassageGun} 
-                  alt="Electronics"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
               </div>
             </div>
           </div>
         </div>
 
-        {/* Trust indicators - Mobile grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mt-16 sm:mt-20 md:mt-24 max-w-5xl mx-auto">
-          <div className="text-center space-y-2">
-            <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-accent mx-auto" />
-            <div className="text-xl sm:text-2xl font-bold text-foreground">Quality</div>
-            <div className="text-xs sm:text-sm text-muted-foreground">Guaranteed</div>
+        {/* Trust indicators - Compact mobile grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-12 sm:mt-16 max-w-4xl mx-auto">
+          <div className="text-center space-y-1.5 sm:space-y-2">
+            <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-accent mx-auto" />
+            <div className="text-lg sm:text-xl font-bold text-foreground">Quality</div>
+            <div className="text-xs text-muted-foreground">Guaranteed</div>
           </div>
-          <div className="text-center space-y-2">
-            <Package className="h-6 w-6 sm:h-8 sm:w-8 text-accent mx-auto" />
-            <div className="text-xl sm:text-2xl font-bold text-foreground">Fast</div>
-            <div className="text-xs sm:text-sm text-muted-foreground">Pickup</div>
+          <div className="text-center space-y-1.5 sm:space-y-2">
+            <Package className="h-5 w-5 sm:h-6 sm:w-6 text-accent mx-auto" />
+            <div className="text-lg sm:text-xl font-bold text-foreground">Fast</div>
+            <div className="text-xs text-muted-foreground">Pickup</div>
           </div>
-          <div className="text-center space-y-2">
-            <Zap className="h-6 w-6 sm:h-8 sm:w-8 text-accent mx-auto" />
-            <div className="text-xl sm:text-2xl font-bold text-foreground">Best</div>
-            <div className="text-xs sm:text-sm text-muted-foreground">Prices</div>
+          <div className="text-center space-y-1.5 sm:space-y-2">
+            <Zap className="h-5 w-5 sm:h-6 sm:w-6 text-accent mx-auto" />
+            <div className="text-lg sm:text-xl font-bold text-foreground">Best</div>
+            <div className="text-xs text-muted-foreground">Prices</div>
           </div>
-          <div className="text-center space-y-2">
-            <Heart className="h-6 w-6 sm:h-8 sm:w-8 text-accent mx-auto" />
-            <div className="text-xl sm:text-2xl font-bold text-foreground">Local</div>
-            <div className="text-xs sm:text-sm text-muted-foreground">Service</div>
+          <div className="text-center space-y-1.5 sm:space-y-2">
+            <Heart className="h-5 w-5 sm:h-6 sm:w-6 text-accent mx-auto" />
+            <div className="text-lg sm:text-xl font-bold text-foreground">Local</div>
+            <div className="text-xs text-muted-foreground">Service</div>
           </div>
         </div>
-      </div>
-
-      {/* Wave transition to next section */}
-      <div className="absolute bottom-0 left-0 right-0 -mb-1">
-        <svg className="w-full h-12 sm:h-16 md:h-20" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-          <path d="M0,40 C240,60 480,60 720,40 C960,20 1200,20 1440,40 L1440,80 L0,80 Z" fill="hsl(var(--muted) / 0.2)" />
-        </svg>
       </div>
     </section>
   );
