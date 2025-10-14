@@ -16,51 +16,61 @@ interface ProductCardProps {
 
 export const ProductCard = ({ id, image, name, price, category, condition, isNew }: ProductCardProps) => {
   return (
-    <Card className="group overflow-hidden border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-      <Link to={`/product/${id}`}>
+    <Card className="group relative overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-300 rounded-xl">
+      <Link to={`/product/${id}`} className="block">
         {/* Image Container */}
-        <div className="relative aspect-square overflow-hidden bg-card">
+        <div className="relative aspect-square overflow-hidden bg-secondary/50">
           <img 
             src={image} 
             alt={name}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
           />
-          {isNew && (
-            <Badge className="absolute top-4 right-4 bg-accent text-accent-foreground">
-              New
-            </Badge>
-          )}
-        </div>
-      </Link>
-
-      {/* Content */}
-      <div className="p-6 space-y-4">
-        <Link to={`/product/${id}`}>
-          <div className="space-y-2">
-            <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
-              {category}
-            </p>
-            <h3 className="font-semibold text-lg text-foreground line-clamp-2 min-h-[3.5rem] group-hover:text-accent transition-colors">
-              {name}
-            </h3>
+          
+          {/* Overlay on Hover */}
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/0 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          
+          {/* Badges */}
+          <div className="absolute top-4 right-4 flex flex-col gap-2">
+            {isNew && (
+              <Badge className="bg-accent text-accent-foreground shadow-lg font-semibold">
+                New
+              </Badge>
+            )}
             {condition && (
-              <p className="text-sm text-muted-foreground">
-                Condition: {condition}
-              </p>
+              <Badge variant="secondary" className="bg-background/90 backdrop-blur-sm shadow-lg">
+                {condition}
+              </Badge>
             )}
           </div>
-        </Link>
-
-        <div className="flex items-center justify-between pt-2">
-          <span className="text-2xl font-bold text-foreground">{price}</span>
-          <Button 
-            size="icon" 
-            className="bg-primary hover:bg-accent hover:text-accent-foreground transition-colors"
-          >
-            <ShoppingCart className="h-4 w-4" />
-          </Button>
         </div>
-      </div>
+
+        {/* Content */}
+        <div className="p-5 space-y-3">
+          <div className="space-y-2">
+            <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+              {category}
+            </p>
+            <h3 className="font-semibold text-base text-foreground line-clamp-2 min-h-[3rem] leading-tight group-hover:text-primary transition-colors">
+              {name}
+            </h3>
+          </div>
+
+          <div className="flex items-center justify-between pt-2 border-t border-border">
+            <span className="text-2xl font-bold text-primary">{price}</span>
+            <Button 
+              size="sm"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-md hover:shadow-lg transition-all rounded-full px-4"
+              onClick={(e) => {
+                e.preventDefault();
+                // Add to cart logic here
+              }}
+            >
+              <ShoppingCart className="h-4 w-4 mr-1" />
+              Add
+            </Button>
+          </div>
+        </div>
+      </Link>
     </Card>
   );
 };
