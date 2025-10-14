@@ -52,19 +52,19 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="/#" className="text-primary-foreground/70 hover:text-accent transition-colors inline-flex items-center group">
-                  <span className="group-hover:translate-x-1 transition-transform">Shipping Info</span>
-                </a>
+                <span className="text-primary-foreground/50 cursor-not-allowed inline-flex items-center">
+                  <span>Shipping Info</span>
+                </span>
               </li>
               <li>
-                <a href="/#" className="text-primary-foreground/70 hover:text-accent transition-colors inline-flex items-center group">
-                  <span className="group-hover:translate-x-1 transition-transform">Returns</span>
-                </a>
+                <span className="text-primary-foreground/50 cursor-not-allowed inline-flex items-center">
+                  <span>Returns</span>
+                </span>
               </li>
               <li>
-                <a href="/#" className="text-primary-foreground/70 hover:text-accent transition-colors inline-flex items-center group">
-                  <span className="group-hover:translate-x-1 transition-transform">FAQ</span>
-                </a>
+                <span className="text-primary-foreground/50 cursor-not-allowed inline-flex items-center">
+                  <span>FAQ</span>
+                </span>
               </li>
             </ul>
           </div>
@@ -104,8 +104,8 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
             <p>© 2025 Next Level Contracting. All rights reserved.</p>
             <div className="flex gap-6">
-              <a href="/#" className="hover:text-accent transition-colors">Privacy Policy</a>
-              <a href="/#" className="hover:text-accent transition-colors">Terms of Service</a>
+              <span className="text-primary-foreground/50 cursor-not-allowed">Privacy Policy</span>
+              <span className="text-primary-foreground/50 cursor-not-allowed">Terms of Service</span>
             </div>
           </div>
         </div>
