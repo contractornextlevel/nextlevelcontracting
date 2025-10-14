@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { CategoryShowcase } from "@/components/CategoryShowcase";
+import { ServicesShowcase } from "@/components/ServicesShowcase";
 import { ProductGrid } from "@/components/ProductGrid";
 import { Footer } from "@/components/Footer";
 
@@ -105,6 +106,9 @@ const Index = () => {
       
       {/* Category Showcase - New Section */}
       <CategoryShowcase />
+      
+      {/* Services Showcase - New Section */}
+      <ServicesShowcase />
       
       {/* Featured Products */}
       <div className="relative">
