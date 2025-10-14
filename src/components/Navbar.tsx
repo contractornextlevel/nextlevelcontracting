@@ -1,13 +1,15 @@
-import { ShoppingCart, Menu } from "lucide-react";
+import { ShoppingCart, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import logo from "@/assets/logo.png";
 import { useState, useEffect } from "react";
 import { useCart } from "@/contexts/CartContext";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { getCartCount } = useCart();
 
   useEffect(() => {
@@ -150,19 +152,55 @@ export const Navbar = () => {
               </Link>
 
               {/* Mobile Menu Button */}
-              <Button 
-                variant="ghost" 
-                size="icon" 
-                className={`md:hidden transition-all duration-300 ${
-                  useRoundedNav && !isScrolled
-                    ? "text-white hover:bg-white/20"
-                    : !isScrolled && !isOnProductsPage 
-                      ? "text-white hover:bg-white/10" 
-                      : ""
-                }`}
-              >
-                <Menu className="h-5 w-5" />
-              </Button>
+              <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+                <SheetTrigger asChild>
+                  <Button 
+                    variant="ghost" 
+                    size="icon" 
+                    className={`md:hidden transition-all duration-300 ${
+                      useRoundedNav && !isScrolled
+                        ? "text-white hover:bg-white/20"
+                        : !isScrolled && !isOnProductsPage 
+                          ? "text-white hover:bg-white/10" 
+                          : ""
+                    }`}
+                  >
+                    <Menu className="h-5 w-5" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                  <nav className="flex flex-col gap-4 mt-8">
+                    <Link 
+                      to="/" 
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="text-lg font-medium hover:text-accent transition-colors py-2"
+                    >
+                      Home
+                    </Link>
+                    <Link 
+                      to="/products" 
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="text-lg font-medium hover:text-accent transition-colors py-2"
+                    >
+                      All Products
+                    </Link>
+                    <Link 
+                      to="/services" 
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="text-lg font-medium hover:text-accent transition-colors py-2"
+                    >
+                      Services
+                    </Link>
+                    <Link 
+                      to="/contact" 
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="text-lg font-medium hover:text-accent transition-colors py-2"
+                    >
+                      Contact
+                    </Link>
+                  </nav>
+                </SheetContent>
+              </Sheet>
             </div>
           </div>
         </div>
