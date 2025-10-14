@@ -472,24 +472,31 @@ const allProducts: Product[] = [
   },
 ];
 
+// Category groups for better organization
+const categoryGroups = {
+  "Tools & Equipment": ["Power Tools", "Tools & Hardware", "Safety Equipment"],
+  "Home Essentials": ["Home Decor", "Home & Bath", "Lighting", "Storage & Organization"],
+  "Electronics": ["Electronics"],
+  "Safety Gear": ["Safety Footwear", "Safety Gear"],
+  "Seasonal Items": ["Holiday & Seasonal"],
+  "Other": ["Appliances", "Home Appliances", "Automotive", "Automotive Accessories", 
+            "Office Equipment", "Medical Equipment", "Health & Wellness", "Accessories", 
+            "Entertainment", "Toys", "Garden & Outdoor", "Pet Supplies"]
+};
+
 const AllProducts = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [selectedCondition, setSelectedCondition] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("newest");
 
-  // Get unique categories
-  const categories = useMemo(() => {
-    const cats = Array.from(new Set(allProducts.map(p => p.category)));
-    return cats.sort();
-  }, []);
-
   // Filter and sort products
   const filteredProducts = useMemo(() => {
     let filtered = [...allProducts];
 
-    // Filter by category
+    // Filter by category group
     if (selectedCategory !== "all") {
-      filtered = filtered.filter(p => p.category === selectedCategory);
+      const categoriesInGroup = categoryGroups[selectedCategory as keyof typeof categoryGroups];
+      filtered = filtered.filter(p => categoriesInGroup.includes(p.category));
     }
 
     // Filter by condition
@@ -529,41 +536,56 @@ const AllProducts = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <main className="container mx-auto px-6 py-24 mt-16">
+      <main className="container mx-auto px-4 sm:px-6 py-24 md:py-28 mt-16">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-3 sm:mb-4">
             All Products
           </h1>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground">
             Browse our complete collection of quality resale and stock items
           </p>
         </div>
 
-        {/* Filters */}
-        <div className="bg-card border border-border rounded-lg p-6 mb-12 space-y-6">
+        {/* Filters - Enhanced Design */}
+        <div className="bg-card border border-border rounded-xl sm:rounded-2xl p-4 sm:p-6 mb-8 sm:mb-12 space-y-4 sm:space-y-6">
           <div className="flex items-center gap-2 text-foreground font-semibold">
             <SlidersHorizontal className="h-5 w-5" />
             <span>Filters</span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            {/* Category Filter */}
-            <div className="space-y-2">
-              <label className="text-sm font-medium text-foreground">Category</label>
-              <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-                <SelectTrigger>
-                  <SelectValue placeholder="All Categories" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All Categories</SelectItem>
-                  {categories.map(cat => (
-                    <SelectItem key={cat} value={cat}>{cat}</SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
+          {/* Category Pills - Main Categories */}
+          <div className="space-y-3">
+            <label className="text-sm font-medium text-foreground">Category</label>
+            <div className="flex flex-wrap gap-2 sm:gap-3">
+              <button
+                onClick={() => setSelectedCategory("all")}
+                className={`px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-sm sm:text-base font-medium transition-all duration-300 ${
+                  selectedCategory === "all"
+                    ? "bg-foreground text-background"
+                    : "bg-background border border-border text-foreground hover:bg-muted"
+                }`}
+              >
+                All Categories
+              </button>
+              {Object.keys(categoryGroups).filter(key => key !== "Other").map((group) => (
+                <button
+                  key={group}
+                  onClick={() => setSelectedCategory(group)}
+                  className={`px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-sm sm:text-base font-medium transition-all duration-300 ${
+                    selectedCategory === group
+                      ? "bg-foreground text-background"
+                      : "bg-background border border-border text-foreground hover:bg-muted"
+                  }`}
+                >
+                  {group}
+                </button>
+              ))}
             </div>
+          </div>
 
+          {/* Secondary Filters Row */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 pt-2">
             {/* Condition Filter */}
             <div className="space-y-2">
               <label className="text-sm font-medium text-foreground">Condition</label>
@@ -598,7 +620,7 @@ const AllProducts = () => {
 
             {/* Reset Button */}
             <div className="space-y-2">
-              <label className="text-sm font-medium text-foreground invisible">Reset</label>
+              <label className="text-sm font-medium text-foreground sm:invisible">Reset</label>
               <Button 
                 variant="outline" 
                 onClick={resetFilters}
@@ -610,7 +632,7 @@ const AllProducts = () => {
           </div>
 
           {/* Results Count */}
-          <div className="text-sm text-muted-foreground">
+          <div className="text-sm text-muted-foreground pt-2 border-t border-border">
             Showing {filteredProducts.length} of {allProducts.length} products
           </div>
         </div>

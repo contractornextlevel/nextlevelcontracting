@@ -17,9 +17,12 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Check if we're on a page that needs a solid navbar
+  const isOnProductsPage = window.location.pathname.includes('/products');
+  
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      isScrolled 
+      isScrolled || isOnProductsPage
         ? "bg-background/98 backdrop-blur-xl border-b border-border shadow-lg" 
         : "bg-transparent"
     }`}>
@@ -31,11 +34,11 @@ export const Navbar = () => {
               src={logo} 
               alt="Next Level Contracting" 
               className={`w-auto transition-all duration-500 group-hover:scale-105 ${
-                isScrolled 
+                isScrolled || isOnProductsPage
                   ? "h-14 sm:h-16 md:h-18 lg:h-20" 
                   : "h-16 sm:h-18 md:h-20 lg:h-24 drop-shadow-[0_0_15px_rgba(255,255,255,0.9)]"
               }`}
-              style={!isScrolled ? { filter: "brightness(1.1)" } : {}}
+              style={!isScrolled && !isOnProductsPage ? { filter: "brightness(1.1)" } : {}}
             />
           </Link>
 
@@ -45,7 +48,7 @@ export const Navbar = () => {
               <Button 
                 variant="ghost" 
                 className={`text-sm font-medium hover:text-accent transition-all duration-300 ${
-                  !isScrolled ? "text-white hover:bg-white/10" : ""
+                  !isScrolled && !isOnProductsPage ? "text-white hover:bg-white/10" : ""
                 }`}
               >
                 Home
@@ -55,7 +58,7 @@ export const Navbar = () => {
               <Button 
                 variant="ghost" 
                 className={`text-sm font-medium hover:text-accent transition-all duration-300 ${
-                  !isScrolled ? "text-white hover:bg-white/10" : ""
+                  !isScrolled && !isOnProductsPage ? "text-white hover:bg-white/10" : ""
                 }`}
               >
                 All Products
@@ -65,7 +68,7 @@ export const Navbar = () => {
               <Button 
                 variant="ghost" 
                 className={`text-sm font-medium hover:text-accent transition-all duration-300 ${
-                  !isScrolled ? "text-white hover:bg-white/10" : ""
+                  !isScrolled && !isOnProductsPage ? "text-white hover:bg-white/10" : ""
                 }`}
               >
                 Categories
@@ -75,7 +78,7 @@ export const Navbar = () => {
               <Button 
                 variant="ghost" 
                 className={`text-sm font-medium hover:text-accent transition-all duration-300 ${
-                  !isScrolled ? "text-white hover:bg-white/10" : ""
+                  !isScrolled && !isOnProductsPage ? "text-white hover:bg-white/10" : ""
                 }`}
               >
                 Contact
@@ -90,7 +93,7 @@ export const Navbar = () => {
               variant="ghost" 
               size="icon" 
               className={`relative transition-all duration-300 ${
-                !isScrolled 
+                !isScrolled && !isOnProductsPage
                   ? "text-white hover:bg-white/10" 
                   : "hover:bg-accent/10"
               }`}
@@ -109,7 +112,7 @@ export const Navbar = () => {
               variant="ghost" 
               size="icon" 
               className={`md:hidden transition-all duration-300 ${
-                !isScrolled ? "text-white hover:bg-white/10" : ""
+                !isScrolled && !isOnProductsPage ? "text-white hover:bg-white/10" : ""
               }`}
             >
               <Menu className="h-5 w-5" />
