@@ -25,16 +25,17 @@ export const Navbar = () => {
     }`}>
       <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
-          {/* Logo - Bigger size with transition */}
+          {/* Logo - Enhanced visibility with shadow */}
           <Link to="/" className="flex items-center group">
             <img 
               src={logo} 
               alt="Next Level Contracting" 
               className={`w-auto transition-all duration-500 group-hover:scale-105 ${
                 isScrolled 
-                  ? "h-12 sm:h-14 md:h-16 lg:h-18" 
-                  : "h-16 sm:h-20 md:h-24 lg:h-28"
+                  ? "h-14 sm:h-16 md:h-18 lg:h-20" 
+                  : "h-16 sm:h-18 md:h-20 lg:h-24 drop-shadow-[0_0_15px_rgba(255,255,255,0.9)]"
               }`}
+              style={!isScrolled ? { filter: "brightness(1.1)" } : {}}
             />
           </Link>
 

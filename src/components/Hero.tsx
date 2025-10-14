@@ -30,7 +30,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[550px] sm:min-h-[650px] md:min-h-[700px] lg:min-h-[75vh] flex items-center justify-center overflow-hidden">
       {/* Background Images Carousel */}
       <div className="absolute inset-0 z-0">
         {heroImages.map((image, index) => (
@@ -57,9 +57,9 @@ export const Hero = () => {
       <div className="absolute inset-0 z-[1] bg-gradient-to-r from-primary/40 via-transparent to-accent/20 animate-pulse" 
            style={{ animationDuration: "8s" }} />
 
-      {/* Content - Added top padding for navbar integration */}
-      <div className="container relative z-10 px-4 sm:px-6 py-32 sm:py-36 md:py-40">
-        <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
+      {/* Content - Compact padding */}
+      <div className="container relative z-10 px-4 sm:px-6 py-24 sm:py-28 md:py-32">
+        <div className="max-w-4xl mx-auto text-center space-y-4 sm:space-y-6">
           {/* Animated badge */}
           <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-accent/20 border border-accent/30 backdrop-blur-md animate-fade-in">
             <span className="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3">
@@ -71,8 +71,8 @@ export const Hero = () => {
             </span>
           </div>
 
-          {/* Main Heading with animation - Mobile optimized */}
-          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-[1.05] tracking-tight">
+          {/* Main Heading with animation - Compact sizing */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.1] tracking-tight">
             <span className="block animate-fade-up" style={{ animationDelay: "0.1s" }}>
               Your Marketplace
             </span>
@@ -83,38 +83,38 @@ export const Hero = () => {
             </span>
           </h1>
 
-          {/* Subheading - Mobile optimized */}
-          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto leading-relaxed animate-fade-up backdrop-blur-sm px-4" 
+          {/* Subheading - Compact */}
+          <p className="text-sm sm:text-base md:text-lg text-primary-foreground/90 max-w-2xl mx-auto leading-relaxed animate-fade-up backdrop-blur-sm px-4" 
              style={{ animationDelay: "0.3s" }}>
             From tools and electronics to home essentials. Quality products at great prices in Kitchener.
           </p>
 
-          {/* CTA Buttons - Mobile optimized */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4 sm:pt-6 animate-fade-up px-4" 
+          {/* CTA Buttons - Compact */}
+          <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3 justify-center items-center pt-3 sm:pt-4 animate-fade-up px-4" 
                style={{ animationDelay: "0.4s" }}>
             <Link to="/products" className="w-full sm:w-auto">
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 sm:px-10 py-6 sm:py-7 text-base sm:text-lg rounded-full shadow-2xl hover:shadow-accent/50 hover:scale-105 transition-all duration-300 group"
+                className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base rounded-full shadow-2xl hover:shadow-accent/50 hover:scale-105 transition-all duration-300 group"
               >
                 Browse Products
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
             <a href="#categories" className="w-full sm:w-auto">
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="w-full sm:w-auto border-2 border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 backdrop-blur-md px-8 sm:px-10 py-6 sm:py-7 text-base sm:text-lg rounded-full hover:scale-105 transition-all duration-300"
+                className="w-full sm:w-auto border-2 border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 backdrop-blur-md px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base rounded-full hover:scale-105 transition-all duration-300"
               >
                 Explore Categories
-                <ChevronRight className="ml-2 h-5 w-5" />
+                <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             </a>
           </div>
 
           {/* Slide indicators */}
-          <div className="flex justify-center gap-2 pt-6 sm:pt-8">
+          <div className="flex justify-center gap-2 pt-4 sm:pt-6">
             {heroImages.map((_, index) => (
               <button
                 key={index}
@@ -131,9 +131,9 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* Smooth wave transition to next section */}
+      {/* Smooth wave transition to next section - Compact */}
       <div className="absolute bottom-0 left-0 right-0 z-10">
-        <svg className="w-full h-16 sm:h-24 md:h-32" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <svg className="w-full h-12 sm:h-16 md:h-20" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
           <path d="M0,64 C240,100 480,100 720,64 C960,28 1200,28 1440,64 L1440,120 L0,120 Z" fill="hsl(var(--background))" />
         </svg>
       </div>
