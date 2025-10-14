@@ -20,6 +20,10 @@ import productChandelier from "@/assets/product-chandelier.jpeg";
 import productKodiakBoots from "@/assets/product-kodiak-boots.jpeg";
 import productInverter from "@/assets/product-inverter.jpeg";
 import productSunglasses from "@/assets/product-sunglasses.jpeg";
+import productAirConditioner from "@/assets/product-air-conditioner.jpeg";
+import productJvcHeadphones from "@/assets/product-jvc-headphones.jpeg";
+import productPowerbank from "@/assets/product-powerbank.jpeg";
+import productWirelessCharger from "@/assets/product-wireless-charger.jpeg";
 
 const Index = () => {
   // Featured Products
@@ -61,6 +65,38 @@ const Index = () => {
   // New Arrivals
   const newArrivals = [
     {
+      id: 25,
+      image: productAirConditioner,
+      name: "Portable Air Conditioner 4-in-1 Mini Evaporative Cooler",
+      price: "$25",
+      category: "Home Appliances",
+      isNew: true,
+    },
+    {
+      id: 26,
+      image: productJvcHeadphones,
+      name: "JVC HA-S36W Bluetooth Headphones",
+      price: "$40",
+      category: "Electronics",
+      isNew: true,
+    },
+    {
+      id: 28,
+      image: productPowerbank,
+      name: "Philips Power Bank 10,000 mAh",
+      price: "$20",
+      category: "Electronics",
+      isNew: true,
+    },
+    {
+      id: 33,
+      image: productWirelessCharger,
+      name: "HaloLock™️ MINI Wireless Charger – Slim Magnetic",
+      price: "$10",
+      category: "Electronics",
+      isNew: true,
+    },
+    {
       id: 23,
       image: productInverter,
       name: "Power Bright 12V 400W Inverter",
@@ -90,38 +126,6 @@ const Index = () => {
       name: "Epic Lighting Coventry Pendant Light",
       price: "$30",
       category: "Lighting",
-      isNew: true,
-    },
-    {
-      id: 19,
-      image: productChandelier,
-      name: "Epic Lighting Coventry Chandelier",
-      price: "$50",
-      category: "Lighting",
-      isNew: true,
-    },
-    {
-      id: 20,
-      image: productKodiakBoots,
-      name: "Kodiak Women's Safety Boots – Size 7.5 US",
-      price: "$60",
-      category: "Safety Footwear",
-      condition: "Excellent",
-    },
-    {
-      id: 13,
-      image: productFootrest,
-      name: "HUANUO Adjustable Footrest Under Desk",
-      price: "$20",
-      category: "Office Equipment",
-      isNew: true,
-    },
-    {
-      id: 14,
-      image: productKeurig,
-      name: "Keurig K-Elite Single Serve Coffee Maker",
-      price: "$120",
-      category: "Appliances",
       isNew: true,
     },
   ];

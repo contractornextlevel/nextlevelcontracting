@@ -26,6 +26,15 @@ import productIcHousing from "@/assets/product-ic-housing.jpeg";
 import productMassageGun from "@/assets/product-massage-gun.jpeg";
 import productInverter from "@/assets/product-inverter.jpeg";
 import productSunglasses from "@/assets/product-sunglasses.jpeg";
+import productAirConditioner from "@/assets/product-air-conditioner.jpeg";
+import productJvcHeadphones from "@/assets/product-jvc-headphones.jpeg";
+import productGamingHeadset from "@/assets/product-gaming-headset.jpeg";
+import productPowerbank from "@/assets/product-powerbank.jpeg";
+import productAirDuster from "@/assets/product-air-duster.jpeg";
+import productShowerCurtain from "@/assets/product-shower-curtain.jpeg";
+import productBlackoutCurtain from "@/assets/product-blackout-curtain.jpeg";
+import productDrainStopper from "@/assets/product-drain-stopper.jpeg";
+import productWirelessCharger from "@/assets/product-wireless-charger.jpeg";
 
 // Product data
 type Product = {
@@ -253,6 +262,87 @@ const products: Record<string, Product> = {
     category: "Accessories",
     condition: "Like New",
     description: "Stylish and classic Guess sunglasses — perfect for everyday wear or special occasions. UV protection, trendy & comfortable fit. Excellent condition.",
+  },
+  "25": {
+    id: 25,
+    image: productAirConditioner,
+    name: "Portable Air Conditioner 4-in-1 Mini Evaporative Cooler",
+    price: "$25",
+    category: "Home Appliances",
+    isNew: true,
+    description: "Stay cool anywhere with this compact 4-in-1 mini cooler — perfect for bedrooms, offices, or small spaces. Features cooling, humidifying, purifying, and fan functions. Compact & portable design, easy to use & energy efficient. Brand new (No Remote).",
+  },
+  "26": {
+    id: 26,
+    image: productJvcHeadphones,
+    name: "JVC HA-S36W Bluetooth Headphones",
+    price: "$40",
+    category: "Electronics",
+    isNew: true,
+    description: "Enjoy wireless music with these JVC Bluetooth headphones — comfortable, stylish, and powerful sound. Bluetooth wireless connectivity, over-ear comfortable design, clear & powerful sound, long battery life.",
+  },
+  "27": {
+    id: 27,
+    image: productGamingHeadset,
+    name: "BINNUNE Wireless Gaming Headset",
+    price: "$20",
+    category: "Electronics",
+    condition: "Great",
+    description: "Wireless headset perfect for gaming, streaming, or everyday use. Comfortable and clear sound! Wireless connectivity, built-in microphone, comfortable over-ear design. Great condition.",
+  },
+  "28": {
+    id: 28,
+    image: productPowerbank,
+    name: "Philips Power Bank 10,000 mAh",
+    price: "$20",
+    category: "Electronics",
+    isNew: true,
+    description: "Keep your devices charged on the go with this high-capacity Philips power bank — reliable, portable, and stylish. 10,000 mAh capacity, fast charging, compact & portable design. Comes in original box.",
+  },
+  "29": {
+    id: 29,
+    image: productAirDuster,
+    name: "CAGIWIRU Compressed Air Duster 4.0 – Cordless Electric Air Blower",
+    price: "$20",
+    category: "Electronics",
+    isNew: true,
+    description: "Keep your electronics clean and dust-free with this powerful cordless air duster — perfect for keyboards, PCs, cameras, and more. Cordless & rechargeable, LED light for precision cleaning, strong airflow, lightweight & portable, safe for electronics.",
+  },
+  "30": {
+    id: 30,
+    image: productShowerCurtain,
+    name: "AmazerBath Shower Curtain Liner – 72x72 Beige",
+    price: "$12",
+    category: "Home & Bath",
+    isNew: true,
+    description: "Keep your bathroom clean and stylish with this lightweight waterproof shower curtain liner — designed for durability and easy use. Size: 72x72 inches, color: Beige/Cream. Made from PEVA – waterproof & eco-friendly. Includes 3 magnets & 12 grommets for secure fit.",
+  },
+  "31": {
+    id: 31,
+    image: productBlackoutCurtain,
+    name: "H.VERSAILTEX Blackout Curtain – Storm Blue, 52\" W × 96\" L",
+    price: "$20",
+    category: "Home Decor",
+    isNew: true,
+    description: "Keep your room cool and private with this thermal insulated blackout curtain — perfect for living rooms, bedrooms, or offices. Extra long – 96 inches length, solid grommet top – easy to hang, thermal insulated – energy saving, blocks light & provides privacy. One panel.",
+  },
+  "32": {
+    id: 32,
+    image: productDrainStopper,
+    name: "Generic Bathroom Sink Drain Stopper – Pop-Up Hair Catcher",
+    price: "$5",
+    category: "Home & Bath",
+    isNew: true,
+    description: "Keep your sink and floor drains clean with this easy-to-use pop-up drain stopper — perfect for bathroom or kitchen. Pop-up bounce core design, removable stainless steel filter basket, catches hair & debris, easy to clean & reusable.",
+  },
+  "33": {
+    id: 33,
+    image: productWirelessCharger,
+    name: "HaloLock™️ MINI Wireless Charger – Slim Magnetic",
+    price: "$10",
+    category: "Electronics",
+    isNew: true,
+    description: "Charge your devices fast and wirelessly with this slim, magnetic wireless charger — stylish, portable, and reliable. Slim & lightweight design, magnetic alignment for easy charging, braided nylon cable – durable & tangle-free, compatible with Qi-enabled devices.",
   },
 };
 
