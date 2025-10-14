@@ -35,7 +35,7 @@ export const Navbar = () => {
       }`}>
         <div className={`transition-all duration-500 ${
           useRoundedNav && !isScrolled
-            ? "bg-white/20 backdrop-blur-md rounded-full border border-white/30 shadow-xl px-6 py-3"
+            ? "bg-white/20 backdrop-blur-md rounded-full border border-white/30 shadow-xl px-6 py-2"
             : isScrolled || isOnProductsPage
               ? "bg-background/98 backdrop-blur-xl border-b border-border shadow-lg px-4 sm:px-6 py-3 sm:py-4"
               : "bg-transparent px-4 sm:px-6 py-3 sm:py-4"
