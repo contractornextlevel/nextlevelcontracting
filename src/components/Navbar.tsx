@@ -2,19 +2,19 @@ import { ShoppingCart, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import logo from "@/assets/logo-outline.jpg";
+import logo from "@/assets/logo.png";
 
 export const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-lg border-b border-border shadow-sm">
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
+          {/* Logo - Bigger size */}
+          <Link to="/" className="flex items-center group">
             <img 
               src={logo} 
               alt="Next Level Contracting" 
-              className="h-10 w-auto transition-transform group-hover:scale-105" 
+              className="h-12 sm:h-14 md:h-16 w-auto transition-transform group-hover:scale-105" 
             />
           </Link>
 

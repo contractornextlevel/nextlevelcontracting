@@ -3,19 +3,19 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-// Import product images for the carousel
-import productDrill from "@/assets/product-drill.jpg";
-import productKeurig from "@/assets/product-keurig.jpeg";
-import productBoots from "@/assets/product-boots.jpeg";
-import productHelmet from "@/assets/product-helmet.jpg";
-import productToaster from "@/assets/product-toaster.jpeg";
+// Import AI generated hero images
+import heroTools from "@/assets/hero-tools.jpg";
+import heroElectronics from "@/assets/hero-electronics.jpg";
+import heroHome from "@/assets/hero-home.jpg";
+import heroSafety from "@/assets/hero-safety.jpg";
+import heroAppliances from "@/assets/hero-appliances.jpg";
 
 const heroImages = [
-  { src: productDrill, title: "Power Tools", subtitle: "Professional Grade" },
-  { src: productKeurig, title: "Home Appliances", subtitle: "Modern Living" },
-  { src: productBoots, title: "Safety Gear", subtitle: "Work Ready" },
-  { src: productHelmet, title: "Protection", subtitle: "Safety First" },
-  { src: productToaster, title: "Kitchen Essentials", subtitle: "Daily Comfort" },
+  { src: heroTools, title: "Power Tools", subtitle: "Professional Grade" },
+  { src: heroElectronics, title: "Electronics", subtitle: "Tech Essentials" },
+  { src: heroHome, title: "Home & Living", subtitle: "Modern Comfort" },
+  { src: heroSafety, title: "Safety Gear", subtitle: "Work Ready" },
+  { src: heroAppliances, title: "Appliances", subtitle: "Kitchen & More" },
 ];
 
 export const Hero = () => {
@@ -30,7 +30,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[85vh] sm:min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Images Carousel */}
       <div className="absolute inset-0 z-0">
         {heroImages.map((image, index) => (
@@ -58,21 +58,21 @@ export const Hero = () => {
            style={{ animationDuration: "8s" }} />
 
       {/* Content */}
-      <div className="container relative z-10 px-6 py-32">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
+      <div className="container relative z-10 px-4 sm:px-6 py-20 sm:py-32">
+        <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8">
           {/* Animated badge */}
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent/20 border border-accent/30 backdrop-blur-md animate-fade-in">
-            <span className="relative flex h-3 w-3">
+          <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-accent/20 border border-accent/30 backdrop-blur-md animate-fade-in">
+            <span className="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 sm:h-3 sm:w-3 bg-accent"></span>
             </span>
-            <span className="text-sm font-semibold text-primary-foreground tracking-wide">
+            <span className="text-xs sm:text-sm font-semibold text-primary-foreground tracking-wide">
               {heroImages[currentSlide].title} • {heroImages[currentSlide].subtitle}
             </span>
           </div>
 
-          {/* Main Heading with animation */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-[1.05] tracking-tight">
+          {/* Main Heading with animation - Mobile optimized */}
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-primary-foreground leading-[1.05] tracking-tight">
             <span className="block animate-fade-up" style={{ animationDelay: "0.1s" }}>
               Your Marketplace
             </span>
@@ -83,29 +83,29 @@ export const Hero = () => {
             </span>
           </h1>
 
-          {/* Subheading */}
-          <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto leading-relaxed animate-fade-up backdrop-blur-sm" 
+          {/* Subheading - Mobile optimized */}
+          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto leading-relaxed animate-fade-up backdrop-blur-sm px-4" 
              style={{ animationDelay: "0.3s" }}>
-            From tools and electronics to home essentials. Discover quality products at unbeatable prices in Kitchener.
+            From tools and electronics to home essentials. Quality products at great prices in Kitchener.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6 animate-fade-up" 
+          {/* CTA Buttons - Mobile optimized */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4 sm:pt-6 animate-fade-up px-4" 
                style={{ animationDelay: "0.4s" }}>
-            <Link to="/products">
+            <Link to="/products" className="w-full sm:w-auto">
               <Button 
                 size="lg" 
-                className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-10 py-7 text-lg rounded-full shadow-2xl hover:shadow-accent/50 hover:scale-105 transition-all duration-300 group"
+                className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 sm:px-10 py-6 sm:py-7 text-base sm:text-lg rounded-full shadow-2xl hover:shadow-accent/50 hover:scale-105 transition-all duration-300 group"
               >
                 Browse Products
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
-            <a href="#categories">
+            <a href="#categories" className="w-full sm:w-auto">
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="border-2 border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 backdrop-blur-md px-10 py-7 text-lg rounded-full hover:scale-105 transition-all duration-300"
+                className="w-full sm:w-auto border-2 border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 backdrop-blur-md px-8 sm:px-10 py-6 sm:py-7 text-base sm:text-lg rounded-full hover:scale-105 transition-all duration-300"
               >
                 Explore Categories
                 <ChevronRight className="ml-2 h-5 w-5" />
@@ -114,15 +114,15 @@ export const Hero = () => {
           </div>
 
           {/* Slide indicators */}
-          <div className="flex justify-center gap-2 pt-8">
+          <div className="flex justify-center gap-2 pt-6 sm:pt-8">
             {heroImages.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${
+                className={`h-1.5 sm:h-2 rounded-full transition-all duration-300 ${
                   index === currentSlide 
-                    ? "w-8 bg-accent" 
-                    : "w-2 bg-primary-foreground/30 hover:bg-primary-foreground/50"
+                    ? "w-6 sm:w-8 bg-accent" 
+                    : "w-1.5 sm:w-2 bg-primary-foreground/30 hover:bg-primary-foreground/50"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
@@ -131,8 +131,12 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* Smooth bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background via-background/80 to-transparent z-10" />
+      {/* Smooth wave transition to next section */}
+      <div className="absolute bottom-0 left-0 right-0 z-10">
+        <svg className="w-full h-16 sm:h-24 md:h-32" viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,64 C240,100 480,100 720,64 C960,28 1200,28 1440,64 L1440,120 L0,120 Z" fill="hsl(var(--background))" />
+        </svg>
+      </div>
     </section>
   );
 };
