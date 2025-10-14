@@ -749,7 +749,10 @@ const ProductDetail = () => {
   const [quantity, setQuantity] = useState(1);
   const { addToCart } = useCart();
   
-  const product = products[id as keyof typeof products];
+const idNum = Number(id);
+const base = baseProducts.find((p) => p.id === idNum);
+const descEntry = products[id as keyof typeof products] as any;
+const product = base && { ...base, description: descEntry?.description ?? "Details coming soon." };
 
   if (!product) {
     return (
