@@ -124,52 +124,6 @@ const allProducts: Product[] = [
   },
   {
     id: 7,
-    image: productGloves,
-    name: "Heavy Duty Work Gloves",
-    price: "$28",
-    category: "Safety Gear",
-    isNew: true,
-  },
-  {
-    id: 8,
-    image: productDrill,
-    name: "Cordless Drill Kit",
-    price: "$95",
-    category: "Power Tools",
-    isNew: true,
-  },
-  {
-    id: 9,
-    image: productBoots,
-    name: "Professional Safety Boots",
-    price: "$85",
-    category: "Safety Footwear",
-    condition: "Excellent",
-  },
-  {
-    id: 10,
-    image: productHelmet,
-    name: "Industrial Hard Hat Pro",
-    price: "$50",
-    category: "Safety Equipment",
-  },
-  {
-    id: 11,
-    image: productLight,
-    name: "Designer Pendant Light",
-    price: "$60",
-    category: "Lighting",
-    condition: "Like New",
-  },
-  {
-    id: 12,
-    image: productDrill,
-    name: "Impact Driver Set",
-    price: "$140",
-    category: "Power Tools",
-  },
-  {
-    id: 13,
     image: productFootrest,
     name: "HUANUO Adjustable Footrest Under Desk",
     price: "$20",
@@ -177,7 +131,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 14,
+    id: 8,
     image: productKeurig,
     name: "Keurig K-Elite Single Serve Coffee Maker",
     price: "$120",
@@ -185,7 +139,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 15,
+    id: 9,
     image: productCommode,
     name: "Drive Medical Steel Folding Frame Commode",
     price: "$50",
@@ -193,7 +147,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 16,
+    id: 10,
     image: productJeepStorage,
     name: "Center Console Hanging Storage Box for Jeep Wrangler",
     price: "$10",
@@ -201,7 +155,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 17,
+    id: 11,
     image: productEyewash,
     name: "CGOLDENWALL Portable Eye Wash Station",
     price: "$20",
@@ -209,7 +163,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 18,
+    id: 12,
     image: productPendantLight,
     name: "Epic Lighting Coventry Pendant Light",
     price: "$30",
@@ -217,7 +171,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 19,
+    id: 13,
     image: productChandelier,
     name: "Epic Lighting Coventry Chandelier",
     price: "$50",
@@ -225,7 +179,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 20,
+    id: 14,
     image: productKodiakBoots,
     name: "Kodiak Women's Safety Boots – Size 7.5 US",
     price: "$60",
@@ -233,7 +187,7 @@ const allProducts: Product[] = [
     condition: "Excellent",
   },
   {
-    id: 21,
+    id: 15,
     image: productIcHousing,
     name: "Lightolier 302MRIC7SPX IC Housing",
     price: "$60",
@@ -241,7 +195,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 22,
+    id: 16,
     image: productMassageGun,
     name: "Deep Tissue Fascia Relaxer – 30-Speed Muscle Massager",
     price: "$45",
@@ -249,7 +203,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 23,
+    id: 17,
     image: productInverter,
     name: "Power Bright 12V 400W Inverter",
     price: "$20",
@@ -257,7 +211,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 24,
+    id: 18,
     image: productSunglasses,
     name: "Guess GU 6096 Sunglasses",
     price: "$45",
@@ -265,7 +219,7 @@ const allProducts: Product[] = [
     condition: "Like New",
   },
   {
-    id: 25,
+    id: 19,
     image: productAirConditioner,
     name: "Portable Air Conditioner 4-in-1 Mini Evaporative Cooler",
     price: "$25",
@@ -273,7 +227,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 26,
+    id: 20,
     image: productJvcHeadphones,
     name: "JVC HA-S36W Bluetooth Headphones",
     price: "$40",
@@ -281,7 +235,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 27,
+    id: 21,
     image: productGamingHeadset,
     name: "BINNUNE Wireless Gaming Headset",
     price: "$20",
@@ -289,7 +243,7 @@ const allProducts: Product[] = [
     condition: "Great",
   },
   {
-    id: 28,
+    id: 22,
     image: productPowerbank,
     name: "Philips Power Bank 10,000 mAh",
     price: "$20",
@@ -297,7 +251,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 29,
+    id: 23,
     image: productAirDuster,
     name: "CAGIWIRU Compressed Air Duster 4.0 – Cordless Electric Air Blower",
     price: "$20",
@@ -305,7 +259,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 30,
+    id: 24,
     image: productShowerCurtain,
     name: "AmazerBath Shower Curtain Liner – 72x72 Beige",
     price: "$12",
@@ -313,7 +267,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 31,
+    id: 25,
     image: productBlackoutCurtain,
     name: "H.VERSAILTEX Blackout Curtain – Storm Blue, 52\" W × 96\" L",
     price: "$20",
@@ -321,7 +275,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 32,
+    id: 26,
     image: productDrainStopper,
     name: "Generic Bathroom Sink Drain Stopper – Pop-Up Hair Catcher",
     price: "$5",
@@ -329,7 +283,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 33,
+    id: 27,
     image: productWirelessCharger,
     name: "HaloLock™️ MINI Wireless Charger – Slim Magnetic",
     price: "$10",
@@ -337,7 +291,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 34,
+    id: 28,
     image: productChristmasDvd,
     name: "The Original Christmas Specials Collection DVD",
     price: "$10",
@@ -345,7 +299,7 @@ const allProducts: Product[] = [
     condition: "Like New",
   },
   {
-    id: 35,
+    id: 29,
     image: productElfDoll,
     name: "10\" Elf Doll with a Book – Perfect for Kids 3-10",
     price: "$10",
@@ -353,7 +307,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 36,
+    id: 30,
     image: productScreenProtector,
     name: "Peslv Magnetic Anti Blue Light Screen Protector – MacBook Pro 14\"",
     price: "$10",
@@ -361,7 +315,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 37,
+    id: 31,
     image: productFogLight,
     name: "KaiDengZhe 2PCS H3 LED Fog Light Bulbs – 6000K White",
     price: "$10",
@@ -369,7 +323,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 38,
+    id: 32,
     image: productValanceCurtain,
     name: "Feelyou Cute Christmas Valance Curtain – 1 Panel 52\"x12\"",
     price: "$8",
@@ -377,7 +331,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 39,
+    id: 33,
     image: productVacuumFilters,
     name: "BuyParts 2 HEPA + 4 Foam Filters for Shark Vacuum",
     price: "$10",
@@ -385,7 +339,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 40,
+    id: 34,
     image: productCasterWheel,
     name: "Caster Wheel for Ridgid Wet Dry Shop Vac",
     price: "$10",
@@ -393,7 +347,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 41,
+    id: 35,
     image: productSunShade,
     name: "XHRING Windshield Sun Shade – Fits Kia Models",
     price: "$12",
@@ -401,7 +355,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 42,
+    id: 36,
     image: productBohoCurtain,
     name: "Lecloud Black Stall Boho Shower Curtain – 36\" W × 72\" L",
     price: "$10",
@@ -409,7 +363,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 43,
+    id: 37,
     image: productHoseConnector,
     name: "Yardworks Plastic Quick Connect Starter Set – 5pcs",
     price: "$7",
@@ -417,7 +371,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 44,
+    id: 38,
     image: productPinkHeadset,
     name: "SIMGAL Gaming Headset with Mic – Pink",
     price: "$15",
@@ -425,7 +379,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 45,
+    id: 39,
     image: productMetalTreeStand,
     name: "Rocky Mountain Goods Metal Christmas Tree Stand – Red",
     price: "$20",
@@ -433,7 +387,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 46,
+    id: 40,
     image: productGreenTreeStand,
     name: "Jack Post 506-ST Christmas Tree Stand – Green Plastic, 6 Ft. Tree",
     price: "$20",
@@ -441,7 +395,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 47,
+    id: 41,
     image: productToaster,
     name: "OVENTE Electric 2-Slice Toaster – Black TP2210B",
     price: "$25",
@@ -449,7 +403,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 48,
+    id: 42,
     image: productCoolingMat,
     name: "Mora Pets Dog Cooling Mat – 65 × 50 CM / 25.5 x 19.5 inch",
     price: "$20",
@@ -457,7 +411,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 49,
+    id: 43,
     image: productRugPad,
     name: "Rug Pad – Non-Slip Felt Rug Gripper 2.5 x 2 m",
     price: "$15",
@@ -465,7 +419,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 50,
+    id: 44,
     image: productBucket,
     name: "3.5 Gallon White Bucket & Lid – Food Grade, BPA Free (4 Pack)",
     price: "$20",
@@ -473,7 +427,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 51,
+    id: 45,
     image: productSlipcover,
     name: "TAOCOCO Recliner Loveseat Slipcover – 6 Pieces, Charcoal Grey",
     price: "$30",
@@ -481,7 +435,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 52,
+    id: 46,
     image: productCarStorageBox,
     name: "Car Central Control Storage Box – Gear Storage Bin (2018-2021)",
     price: "$8",
@@ -489,7 +443,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 53,
+    id: 47,
     image: productColdTherapy,
     name: "Cold Therapy Machine – Ice Therapy for Knee",
     price: "$70",
@@ -497,7 +451,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 54,
+    id: 48,
     image: productInsulatedBoxes,
     name: "6pcs Reusable Insulated Shipping Boxes – Aluminum Foil Liner",
     price: "$20",
@@ -505,7 +459,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 55,
+    id: 49,
     image: productAerostarFilters,
     name: "Aerostar AC & Furnace Pleated Air Conditioner Filters – 20x20x1, MERV 8 (6 Pack)",
     price: "$50",
@@ -513,7 +467,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 56,
+    id: 50,
     image: productAerostarFilters,
     name: "Honeywell Air Filter Replacement – 20\" x 25\" x 4\" FC200E1037",
     price: "$30",
@@ -521,7 +475,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 57,
+    id: 51,
     image: productAerostarFilters,
     name: "Nordic Pure Pleated Air Filters – 16x20x2 (3 Pack), MERV 12",
     price: "$30",
@@ -529,7 +483,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 58,
+    id: 52,
     image: productFauxFurRug,
     name: "Faux Fur Fluffy Rug – White, 1.9 × 4.9 Feet",
     price: "$25",
@@ -537,7 +491,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 59,
+    id: 53,
     image: productGatorWheels,
     name: "Peg Perego Gator HPX Front Wheels – 2 Pack",
     price: "$20",
@@ -545,7 +499,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 60,
+    id: 54,
     image: productWindowTrim,
     name: "Savadicar 4-Piece Black Window Beltline Trim Cover – Ford F150 (2021-Present)",
     price: "$15",
@@ -553,7 +507,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 61,
+    id: 55,
     image: productCarpetProtector,
     name: "Uross Carpet Protector for Pets – 3.6FT, 2PCS",
     price: "$10",
@@ -561,7 +515,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 62,
+    id: 56,
     image: productVicksHumidifier,
     name: "Vicks Mini Filter Free Cool Mist Humidifier – Small Room",
     price: "$10",
@@ -569,7 +523,7 @@ const allProducts: Product[] = [
     isNew: true,
   },
   {
-    id: 63,
+    id: 57,
     image: productRegisterPaper,
     name: "Cash Register Paper Rolls – For STAR SP700 & POS Printers (50 Rolls)",
     price: "$20",
