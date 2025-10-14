@@ -35,7 +35,7 @@ export const Navbar = () => {
       }`}>
         <div className={`transition-all duration-500 ${
           useRoundedNav && !isScrolled
-            ? "bg-white/20 backdrop-blur-md rounded-full border border-white/30 shadow-xl px-6 py-4"
+            ? "bg-white/20 backdrop-blur-md rounded-full border border-white/30 shadow-xl px-6 py-3"
             : isScrolled || isOnProductsPage
               ? "bg-background/98 backdrop-blur-xl border-b border-border shadow-lg px-4 sm:px-6 py-3 sm:py-4"
               : "bg-transparent px-4 sm:px-6 py-3 sm:py-4"
@@ -50,7 +50,7 @@ export const Navbar = () => {
                 alt="Next Level Contracting" 
                 className={`w-auto transition-all duration-500 group-hover:scale-105 ${
                   useRoundedNav && !isScrolled
-                    ? "h-20 sm:h-24 md:h-28 lg:h-32" 
+                    ? "h-12 sm:h-14" 
                     : isScrolled || isOnProductsPage
                       ? "h-14 sm:h-16 md:h-18 lg:h-20" 
                       : "h-16 sm:h-18 md:h-20 lg:h-24 drop-shadow-[0_0_15px_rgba(255,255,255,0.9)]"
