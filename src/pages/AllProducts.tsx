@@ -42,6 +42,16 @@ import productValanceCurtain from "@/assets/product-valance-curtain.jpeg";
 import productVacuumFilters from "@/assets/product-vacuum-filters.jpeg";
 import productCasterWheel from "@/assets/product-caster-wheel.jpeg";
 import productSunShade from "@/assets/product-sun-shade.jpeg";
+import productBohoCurtain from "@/assets/product-boho-curtain.jpeg";
+import productHoseConnector from "@/assets/product-hose-connector.jpeg";
+import productPinkHeadset from "@/assets/product-pink-headset.jpeg";
+import productMetalTreeStand from "@/assets/product-metal-tree-stand.jpeg";
+import productGreenTreeStand from "@/assets/product-green-tree-stand.jpeg";
+import productToaster from "@/assets/product-toaster.jpeg";
+import productCoolingMat from "@/assets/product-cooling-mat.jpeg";
+import productRugPad from "@/assets/product-rug-pad.jpeg";
+import productBucket from "@/assets/product-bucket.jpeg";
+import productSlipcover from "@/assets/product-slipcover.jpeg";
 
 interface Product {
   id: number;
@@ -378,6 +388,86 @@ const allProducts: Product[] = [
     name: "XHRING Windshield Sun Shade – Fits Kia Models",
     price: "$12",
     category: "Automotive",
+    isNew: true,
+  },
+  {
+    id: 42,
+    image: productBohoCurtain,
+    name: "Lecloud Black Stall Boho Shower Curtain – 36\" W × 72\" L",
+    price: "$10",
+    category: "Home & Bath",
+    isNew: true,
+  },
+  {
+    id: 43,
+    image: productHoseConnector,
+    name: "Yardworks Plastic Quick Connect Starter Set – 5pcs",
+    price: "$7",
+    category: "Garden & Outdoor",
+    isNew: true,
+  },
+  {
+    id: 44,
+    image: productPinkHeadset,
+    name: "SIMGAL Gaming Headset with Mic – Pink",
+    price: "$15",
+    category: "Electronics",
+    isNew: true,
+  },
+  {
+    id: 45,
+    image: productMetalTreeStand,
+    name: "Rocky Mountain Goods Metal Christmas Tree Stand – Red",
+    price: "$20",
+    category: "Holiday & Seasonal",
+    isNew: true,
+  },
+  {
+    id: 46,
+    image: productGreenTreeStand,
+    name: "Jack Post 506-ST Christmas Tree Stand – Green Plastic, 6 Ft. Tree",
+    price: "$20",
+    category: "Holiday & Seasonal",
+    isNew: true,
+  },
+  {
+    id: 47,
+    image: productToaster,
+    name: "OVENTE Electric 2-Slice Toaster – Black TP2210B",
+    price: "$25",
+    category: "Appliances",
+    isNew: true,
+  },
+  {
+    id: 48,
+    image: productCoolingMat,
+    name: "Mora Pets Dog Cooling Mat – 65 × 50 CM / 25.5 x 19.5 inch",
+    price: "$20",
+    category: "Pet Supplies",
+    isNew: true,
+  },
+  {
+    id: 49,
+    image: productRugPad,
+    name: "Rug Pad – Non-Slip Felt Rug Gripper 2.5 x 2 m",
+    price: "$15",
+    category: "Home Decor",
+    isNew: true,
+  },
+  {
+    id: 50,
+    image: productBucket,
+    name: "3.5 Gallon White Bucket & Lid – Food Grade, BPA Free (4 Pack)",
+    price: "$20",
+    category: "Storage & Organization",
+    isNew: true,
+  },
+  {
+    id: 51,
+    image: productSlipcover,
+    name: "TAOCOCO Recliner Loveseat Slipcover – 6 Pieces, Charcoal Grey",
+    price: "$30",
+    category: "Home Decor",
     isNew: true,
   },
 ];

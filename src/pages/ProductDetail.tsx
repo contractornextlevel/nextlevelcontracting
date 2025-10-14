@@ -43,6 +43,16 @@ import productValanceCurtain from "@/assets/product-valance-curtain.jpeg";
 import productVacuumFilters from "@/assets/product-vacuum-filters.jpeg";
 import productCasterWheel from "@/assets/product-caster-wheel.jpeg";
 import productSunShade from "@/assets/product-sun-shade.jpeg";
+import productBohoCurtain from "@/assets/product-boho-curtain.jpeg";
+import productHoseConnector from "@/assets/product-hose-connector.jpeg";
+import productPinkHeadset from "@/assets/product-pink-headset.jpeg";
+import productMetalTreeStand from "@/assets/product-metal-tree-stand.jpeg";
+import productGreenTreeStand from "@/assets/product-green-tree-stand.jpeg";
+import productToaster from "@/assets/product-toaster.jpeg";
+import productCoolingMat from "@/assets/product-cooling-mat.jpeg";
+import productRugPad from "@/assets/product-rug-pad.jpeg";
+import productBucket from "@/assets/product-bucket.jpeg";
+import productSlipcover from "@/assets/product-slipcover.jpeg";
 
 // Product data
 type Product = {
@@ -423,6 +433,96 @@ const products: Record<string, Product> = {
     category: "Automotive",
     isNew: true,
     description: "Protect your car interior from sun and heat with this durable windshield sun shade — perfect for multiple Kia models. Fits: Kia K5 2021-2026, Optima 2011-2020, Soul 2010-2025, Sportage 1995-2026, Seltos 2020-, Forte 2019-2025, Rio. Blocks sun & reduces heat, easy to install & remove, protects dashboard & interior, durable & foldable design.",
+  },
+  "42": {
+    id: 42,
+    image: productBohoCurtain,
+    name: "Lecloud Black Stall Boho Shower Curtain – 36\" W × 72\" L",
+    price: "$10",
+    category: "Home & Bath",
+    isNew: true,
+    description: "Add a modern farmhouse touch to your bathroom with this boho textured fabric shower curtain — stylish and durable. Size: 36\" W × 72\" L, boho/farmhouse design, tufted plaid striped pattern, clip jacquard textured fabric. Half-size curtain – perfect for bathrooms.",
+  },
+  "43": {
+    id: 43,
+    image: productHoseConnector,
+    name: "Yardworks Plastic Quick Connect Starter Set – 5pcs",
+    price: "$7",
+    category: "Garden & Outdoor",
+    isNew: true,
+    description: "Make your gardening and watering easier with this plastic quick connect set — perfect for hoses and outdoor use. 5-piece starter set, quick connect design, durable plastic material, easy to use & install.",
+  },
+  "44": {
+    id: 44,
+    image: productPinkHeadset,
+    name: "SIMGAL Gaming Headset with Mic – Pink",
+    price: "$15",
+    category: "Electronics",
+    isNew: true,
+    description: "Cute and fun cat ear gaming headset with RGB lights — compatible with PS4, PS5, Xbox One (adapter not included), PC, and mobile. Perfect for girls and women gamers! Removable cat ears, surround sound, built-in microphone, RGB lights. Compatible with PS4, PS5, Xbox One*, PC, Mobile (*adapter not included).",
+  },
+  "45": {
+    id: 45,
+    image: productMetalTreeStand,
+    name: "Rocky Mountain Goods Metal Christmas Tree Stand – Red",
+    price: "$20",
+    category: "Holiday & Seasonal",
+    isNew: true,
+    description: "Keep your live Christmas tree stable and fresh this holiday season with this easy-to-use metal tree stand. Fits trees up to 8 feet, stable metal base, holds 1.125 gallons of water, easy assembly – no tools needed. Model: RMG-MTS8, color: Red.",
+  },
+  "46": {
+    id: 46,
+    image: productGreenTreeStand,
+    name: "Jack Post 506-ST Christmas Tree Stand – Green Plastic, 6 Ft. Tree",
+    price: "$20",
+    category: "Holiday & Seasonal",
+    isNew: true,
+    description: "Keep your live Christmas tree stable and upright with this easy-to-use plastic tree stand — perfect for holiday decorating. Fits trees up to 6 feet, durable green plastic, simple assembly. Quantity: 1.",
+  },
+  "47": {
+    id: 47,
+    image: productToaster,
+    name: "OVENTE Electric 2-Slice Toaster – Black TP2210B",
+    price: "$25",
+    category: "Appliances",
+    isNew: true,
+    description: "Perfect for toasting bread, thin bagels, and waffles — compact design with easy-to-use features. 6-shade browning selector, 700W power, removable crumb tray, compact & stylish design, easy to use & clean.",
+  },
+  "48": {
+    id: 48,
+    image: productCoolingMat,
+    name: "Mora Pets Dog Cooling Mat – 65 × 50 CM / 25.5 x 19.5 inch",
+    price: "$20",
+    category: "Pet Supplies",
+    isNew: true,
+    description: "Keep your pets cool and comfortable with this self-cooling gel mat — perfect for dogs and cats of all sizes. Size: 65 × 50 CM (25.5 x 19.5 inch), pressure-activated cooling gel, suitable for large, medium, and small dogs, self-cooling – no electricity needed, ideal for hot days & indoor/outdoor use.",
+  },
+  "49": {
+    id: 49,
+    image: productRugPad,
+    name: "Rug Pad – Non-Slip Felt Rug Gripper 2.5 x 2 m",
+    price: "$15",
+    category: "Home Decor",
+    isNew: true,
+    description: "Protect your floors and keep your rugs in place with this extra thick felt rug pad — perfect for area rugs, hallway runners, and carpets. Size: 2.5 x 2 m, extra thick felt – 1/4\", non-slip grip, carpet protector & underlay, easy to trim & fit any rug.",
+  },
+  "50": {
+    id: 50,
+    image: productBucket,
+    name: "3.5 Gallon White Bucket & Lid – Food Grade, BPA Free (4 Pack)",
+    price: "$20",
+    category: "Storage & Organization",
+    isNew: true,
+    description: "Durable and versatile all-purpose buckets — perfect for storage, food, or household use. Capacity: 3.5 gallons each, includes lid, food grade & BPA free plastic, durable 90 mil construction, all-purpose use – home, kitchen, or storage.",
+  },
+  "51": {
+    id: 51,
+    image: productSlipcover,
+    name: "TAOCOCO Recliner Loveseat Slipcover – 6 Pieces, Charcoal Grey",
+    price: "$30",
+    category: "Home Decor",
+    isNew: true,
+    description: "Protect your dual reclining loveseat with this stretchy, soft jacquard furniture cover — stylish and durable. 6-piece set for 2-seat recliner, soft stretch jacquard fabric, elastic fit – easy to install, protects furniture from spills, pets & dirt. Color: Charcoal Grey.",
   },
 };
 
