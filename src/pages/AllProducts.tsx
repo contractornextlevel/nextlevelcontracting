@@ -52,6 +52,16 @@ import productCoolingMat from "@/assets/product-cooling-mat.jpeg";
 import productRugPad from "@/assets/product-rug-pad.jpeg";
 import productBucket from "@/assets/product-bucket.jpeg";
 import productSlipcover from "@/assets/product-slipcover.jpeg";
+import productCarStorageBox from "@/assets/product-car-storage-box.jpeg";
+import productColdTherapy from "@/assets/product-cold-therapy.jpeg";
+import productInsulatedBoxes from "@/assets/product-insulated-boxes.jpeg";
+import productAerostarFilters from "@/assets/product-aerostar-filters.jpeg";
+import productFauxFurRug from "@/assets/product-faux-fur-rug.jpeg";
+import productGatorWheels from "@/assets/product-gator-wheels.jpeg";
+import productWindowTrim from "@/assets/product-window-trim.jpeg";
+import productCarpetProtector from "@/assets/product-carpet-protector.jpeg";
+import productVicksHumidifier from "@/assets/product-vicks-humidifier.jpeg";
+import productRegisterPaper from "@/assets/product-register-paper.jpeg";
 
 interface Product {
   id: number;
@@ -468,6 +478,102 @@ const allProducts: Product[] = [
     name: "TAOCOCO Recliner Loveseat Slipcover – 6 Pieces, Charcoal Grey",
     price: "$30",
     category: "Home Decor",
+    isNew: true,
+  },
+  {
+    id: 52,
+    image: productCarStorageBox,
+    name: "Car Central Control Storage Box – Gear Storage Bin (2018-2021)",
+    price: "$8",
+    category: "Automotive Accessories",
+    isNew: true,
+  },
+  {
+    id: 53,
+    image: productColdTherapy,
+    name: "Cold Therapy Machine – Ice Therapy for Knee",
+    price: "$70",
+    category: "Health & Wellness",
+    isNew: true,
+  },
+  {
+    id: 54,
+    image: productInsulatedBoxes,
+    name: "6pcs Reusable Insulated Shipping Boxes – Aluminum Foil Liner",
+    price: "$20",
+    category: "Storage & Organization",
+    isNew: true,
+  },
+  {
+    id: 55,
+    image: productAerostarFilters,
+    name: "Aerostar AC & Furnace Pleated Air Conditioner Filters – 20x20x1, MERV 8 (6 Pack)",
+    price: "$50",
+    category: "Home Appliances",
+    isNew: true,
+  },
+  {
+    id: 56,
+    image: productAerostarFilters,
+    name: "Honeywell Air Filter Replacement – 20\" x 25\" x 4\" FC200E1037",
+    price: "$30",
+    category: "Home Appliances",
+    isNew: true,
+  },
+  {
+    id: 57,
+    image: productAerostarFilters,
+    name: "Nordic Pure Pleated Air Filters – 16x20x2 (3 Pack), MERV 12",
+    price: "$30",
+    category: "Home Appliances",
+    isNew: true,
+  },
+  {
+    id: 58,
+    image: productFauxFurRug,
+    name: "Faux Fur Fluffy Rug – White, 1.9 × 4.9 Feet",
+    price: "$25",
+    category: "Home Decor",
+    isNew: true,
+  },
+  {
+    id: 59,
+    image: productGatorWheels,
+    name: "Peg Perego Gator HPX Front Wheels – 2 Pack",
+    price: "$20",
+    category: "Automotive Accessories",
+    isNew: true,
+  },
+  {
+    id: 60,
+    image: productWindowTrim,
+    name: "Savadicar 4-Piece Black Window Beltline Trim Cover – Ford F150 (2021-Present)",
+    price: "$15",
+    category: "Automotive Accessories",
+    isNew: true,
+  },
+  {
+    id: 61,
+    image: productCarpetProtector,
+    name: "Uross Carpet Protector for Pets – 3.6FT, 2PCS",
+    price: "$10",
+    category: "Pet Supplies",
+    isNew: true,
+  },
+  {
+    id: 62,
+    image: productVicksHumidifier,
+    name: "Vicks Mini Filter Free Cool Mist Humidifier – Small Room",
+    price: "$10",
+    category: "Home Appliances",
+    isNew: true,
+  },
+  {
+    id: 63,
+    image: productRegisterPaper,
+    name: "Cash Register Paper Rolls – For STAR SP700 & POS Printers (50 Rolls)",
+    price: "$20",
+    category: "Office Equipment",
     isNew: true,
   },
 ];
