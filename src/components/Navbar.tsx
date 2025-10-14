@@ -50,7 +50,7 @@ export const Navbar = () => {
                 alt="Next Level Contracting" 
                 className={`w-auto transition-all duration-500 group-hover:scale-105 ${
                   useRoundedNav && !isScrolled
-                    ? "h-12 sm:h-14" 
+                    ? "h-16 sm:h-20 md:h-24" 
                     : isScrolled || isOnProductsPage
                       ? "h-14 sm:h-16 md:h-18 lg:h-20" 
                       : "h-16 sm:h-18 md:h-20 lg:h-24 drop-shadow-[0_0_15px_rgba(255,255,255,0.9)]"
