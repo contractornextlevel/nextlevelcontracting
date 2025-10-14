@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { CategoryShowcase } from "@/components/CategoryShowcase";
 import { ProductGrid } from "@/components/ProductGrid";
 import { Footer } from "@/components/Footer";
 
@@ -102,14 +103,22 @@ const Index = () => {
       <Navbar />
       <Hero />
       
-      <ProductGrid 
-        id="featured"
-        products={featuredProducts}
-        title="Featured Products"
-        subtitle="Handpicked selection of our most popular items"
-      />
+      {/* Category Showcase - New Section */}
+      <CategoryShowcase />
+      
+      {/* Featured Products */}
+      <div className="relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background -z-10" />
+        <ProductGrid 
+          id="featured"
+          products={featuredProducts}
+          title="Featured Products"
+          subtitle="Handpicked selection of our most popular items"
+        />
+      </div>
 
-      <div className="bg-card py-24">
+      {/* Top Sellers */}
+      <div className="bg-card/50 backdrop-blur-sm">
         <ProductGrid 
           id="top-sellers"
           products={topSellers}
