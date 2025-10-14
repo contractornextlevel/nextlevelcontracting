@@ -71,7 +71,7 @@ export const Navbar = () => {
                   !isScrolled && !isOnProductsPage ? "text-white hover:bg-white/10" : ""
                 }`}
               >
-                Categories
+                Services
               </Button>
             </a>
             <Link to="/contact">

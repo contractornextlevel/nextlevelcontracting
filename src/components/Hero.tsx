@@ -107,7 +107,7 @@ export const Hero = () => {
                 variant="outline" 
                 className="w-full sm:w-auto border-2 border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 backdrop-blur-md px-6 sm:px-8 py-5 sm:py-6 text-sm sm:text-base rounded-full hover:scale-105 transition-all duration-300"
               >
-                Explore Categories
+                Explore Services
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             </a>
